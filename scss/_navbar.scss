@@ -41,7 +41,7 @@
     }
 
     a {
-        color: #191919; /*Change to the gray color we decide to use */
+        color: $darkColor;
         text-decoration: none;
         transition: 0.4s;
 
@@ -62,7 +62,7 @@
     display: inline-block;
 }
 .line {
-    background-color: #191919; /*Change to the gray color we decide to use */
+    background-color: $darkColor; 
     width: 25px;
     height: 2px;
     margin: 2px 0 5px 0;
