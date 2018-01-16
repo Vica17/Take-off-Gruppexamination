@@ -1,0 +1,4 @@
+.OurTeamContainer {
+    @include flex($direction: column, $justify: center, $align: flex-start);
+    @include margin;
+}
