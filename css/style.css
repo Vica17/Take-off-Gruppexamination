@@ -1,4 +1,5 @@
-/* line 16, /Users/victorianordkvist/Desktop/Take-off-Gruppexamination-master/scss/_navbar.scss */
+/* @import 'variables';
+@import 'defaults'; */
 .navigation-wrapper {
   background-color: #fff;
   -webkit-box-shadow: 0px -6px 26px 1px rgba(125, 125, 125, 0.2);
@@ -9,7 +10,6 @@
   z-index: 9999;
 }
 
-/* line 25, /Users/victorianordkvist/Desktop/Take-off-Gruppexamination-master/scss/_navbar.scss */
 .navigation-content {
   width: 100%;
   max-width: 960px;
@@ -20,13 +20,11 @@
   flex-direction: column;
 }
 
-/* line 34, /Users/victorianordkvist/Desktop/Take-off-Gruppexamination-master/scss/_navbar.scss */
 .navigation-content ul {
   display: none;
 }
 
 @media (min-width: 768px) {
-  /* line 34, /Users/victorianordkvist/Desktop/Take-off-Gruppexamination-master/scss/_navbar.scss */
   .navigation-content ul {
     background-color: #fff;
     display: block;
@@ -34,51 +32,43 @@
   }
 }
 
-/* line 44, /Users/victorianordkvist/Desktop/Take-off-Gruppexamination-master/scss/_navbar.scss */
 .navigation-content li {
   padding: 20px;
   border-bottom: 1px solid #dddddd;
 }
 
 @media (min-width: 768px) {
-  /* line 44, /Users/victorianordkvist/Desktop/Take-off-Gruppexamination-master/scss/_navbar.scss */
   .navigation-content li {
     display: inline-block;
     border: none;
   }
 }
 
-/* line 54, /Users/victorianordkvist/Desktop/Take-off-Gruppexamination-master/scss/_navbar.scss */
 .navigation-content a {
   color: #191919;
   text-decoration: none;
   transition: 0.4s;
 }
 
-/* line 59, /Users/victorianordkvist/Desktop/Take-off-Gruppexamination-master/scss/_navbar.scss */
 .navigation-content a:hover {
   color: #00a99d;
 }
 
-/* line 64, /Users/victorianordkvist/Desktop/Take-off-Gruppexamination-master/scss/_navbar.scss */
 .logo-wrapper {
   width: 60px;
   padding-left: 20px;
 }
 
-/* line 68, /Users/victorianordkvist/Desktop/Take-off-Gruppexamination-master/scss/_navbar.scss */
 .logo {
   padding: 12px 0;
   height: 40px;
 }
 
-/* line 72, /Users/victorianordkvist/Desktop/Take-off-Gruppexamination-master/scss/_navbar.scss */
 .menu-icon {
   cursor: pointer;
   display: inline-block;
 }
 
-/* line 76, /Users/victorianordkvist/Desktop/Take-off-Gruppexamination-master/scss/_navbar.scss */
 .line1, .line2, .line3 {
   background-color: #191919;
   width: 25px;
@@ -86,7 +76,6 @@
   margin: 2px 0 5px 0;
 }
 
-/* line 82, /Users/victorianordkvist/Desktop/Take-off-Gruppexamination-master/scss/_navbar.scss */
 #mobile-menu {
   display: block;
   position: absolute;
@@ -94,7 +83,6 @@
   right: 21px;
 }
 
-/* line 88, /Users/victorianordkvist/Desktop/Take-off-Gruppexamination-master/scss/_navbar.scss */
 .navigation-menu.responsive {
   display: block;
   width: 100%;
@@ -102,127 +90,28 @@
   margin: 0;
 }
 
-/* line 94, /Users/victorianordkvist/Desktop/Take-off-Gruppexamination-master/scss/_navbar.scss */
 .navigation-menu.responsive li {
   display: block;
 }
 
 @media (min-width: 768px) {
-  /* line 100, /Users/victorianordkvist/Desktop/Take-off-Gruppexamination-master/scss/_navbar.scss */
   .navigation-content {
     align-items: center;
     flex-direction: row;
   }
-  /* line 104, /Users/victorianordkvist/Desktop/Take-off-Gruppexamination-master/scss/_navbar.scss */
   .navigation-menu.responsive {
     width: auto;
     display: block;
   }
-  /* line 108, /Users/victorianordkvist/Desktop/Take-off-Gruppexamination-master/scss/_navbar.scss */
   .navigation-menu.responsive li {
     display: inline-block;
   }
-  /* line 112, /Users/victorianordkvist/Desktop/Take-off-Gruppexamination-master/scss/_navbar.scss */
   #mobile-menu {
     display: none;
   }
 }
 
-/* line 1, /Users/victorianordkvist/Desktop/Take-off-Gruppexamination-master/scss/_about.scss */
-.wrap {
-  display: -webkit-box;
-  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
-  display: -ms-flexbox;
-  /* TWEENER - IE 10 */
-  display: -webkit-flex;
-  /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  padding-bottom: 20%;
-  padding-top: 20%;
-}
-
-/* line 7, /Users/victorianordkvist/Desktop/Take-off-Gruppexamination-master/scss/_about.scss */
-.theme {
-  width: 30em;
-  margin-left: 2em;
-  margin-right: 2em;
-}
-
-/* line 12, /Users/victorianordkvist/Desktop/Take-off-Gruppexamination-master/scss/_about.scss */
-.theme img {
-  width: 100%;
-  height: auto;
-}
-
-/* line 1, /Users/victorianordkvist/Desktop/Take-off-Gruppexamination-master/scss/_footer.scss */
-.icon {
-  width: 2rem;
-  flex-direction: row;
-  justify-content: space-between;
-  margin-top: 2%;
-}
-
-/* line 9, /Users/victorianordkvist/Desktop/Take-off-Gruppexamination-master/scss/_footer.scss */
-.navigation {
-  display: -webkit-box;
-  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
-  display: -ms-flexbox;
-  /* TWEENER - IE 10 */
-  display: -webkit-flex;
-  /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  list-style: none;
-  margin: 0;
-  background: #367e9b;
-  -webkit-flex-flow: row wrap;
-}
-
-/* line 18, /Users/victorianordkvist/Desktop/Take-off-Gruppexamination-master/scss/_footer.scss */
-.navigation a {
-  text-decoration: none;
-  display: block;
-  padding: 1em;
-  color: #fff;
-}
-
-/* line 25, /Users/victorianordkvist/Desktop/Take-off-Gruppexamination-master/scss/_footer.scss */
-.navigation a:hover {
-  background: #337893;
-}
-
-@media all and (max-width: 800px) {
-  /* line 30, /Users/victorianordkvist/Desktop/Take-off-Gruppexamination-master/scss/_footer.scss */
-  .navigation {
-    justify-content: space-around;
-  }
-}
-
-@media all and (max-width: 600px) {
-  /* line 36, /Users/victorianordkvist/Desktop/Take-off-Gruppexamination-master/scss/_footer.scss */
-  .navigation {
-    -webkit-flex-flow: column wrap;
-    flex-flow: column wrap;
-    padding: 0;
-  }
-  /* line 42, /Users/victorianordkvist/Desktop/Take-off-Gruppexamination-master/scss/_footer.scss */
-  .navigation a {
-    text-align: center;
-    padding: 10px;
-  }
-  /* line 48, /Users/victorianordkvist/Desktop/Take-off-Gruppexamination-master/scss/_footer.scss */
-  .navigation li:last-of-type a {
-    border-bottom: none;
-  }
-}
-
-/* line 12, /Users/victorianordkvist/Desktop/Take-off-Gruppexamination-master/scss/style.scss */
+/* @import 'button'; */
 body {
   margin: 0;
   font-family: 'Roboto', sans-serif;
@@ -230,5 +119,3 @@ body {
   font-weight: 300;
   line-height: 1.5;
 }
-
-/*# sourceMappingURL=../css/style.map */

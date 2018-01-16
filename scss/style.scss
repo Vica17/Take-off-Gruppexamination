@@ -1,13 +1,10 @@
-@import 'variables';
-@import 'mixins';
+/* @import 'variables';
+@import 'defaults'; */
 @import 'navbar';
 @import 'header';
-@import 'about';
-@import 'work';
-@import 'reviews';
-@import 'contact';
-@import 'team';
 @import 'footer';
+@import '';
+/* @import 'button'; */
 
 body {
     margin: 0;
