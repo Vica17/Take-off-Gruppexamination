@@ -16,3 +16,7 @@ body {
     font-size: 16px;
     line-height: 1.5;
 }
+
+.textCenter {
+    @include flex($direction: column, $justify: center, $align: center);
+}

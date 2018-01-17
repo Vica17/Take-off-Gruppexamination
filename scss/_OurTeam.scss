@@ -1,4 +1,21 @@
 .OurTeamContainer {
     @include flex($direction: column, $justify: center, $align: flex-start);
+    @include flex($direction: column, $justify: center, $align: center);
     @include margin;
+}
+
+.ourTeamImg {
+    width: 200px;
+    height: 200px;
+}
+
+.devContainer {
+    @include flex($direction: column, $justify: center, $align: flex-start);
+}
+
+.hidden {
+    display: none;
+}
+.visible {
+    display: block;
 }
