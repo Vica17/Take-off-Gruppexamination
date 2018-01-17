@@ -1,65 +1,68 @@
-$tablet-width: 768px;
-$desktop-width: 1024px;
 
-@mixin tablet 
-{
-  @media (min-width: #{$tablet-width}) 
-  {
-    @content;
-  }
-}
 
-@mixin desktop 
-{
-  @media (min-width: #{$desktop-width}) 
-  {
-    @content;
-  }
-}
-
-h2
-{
-  text-align: center;
-  color:#fff; /* $lightColor*/
-}
-
-h3
-{
-  color:#464646; /* $darkColor */
-  padding-bottom: 2em;
-
-}
 .contact-wrapper
 {   
-    background-color:#212121;/* $darkColor:*/
-    color:#fff;              /*$lightColor;*/
+    background-color:$darkColor;
+    color:$lightColor;
     text-align: center;
     width: 100%;
     padding-bottom: 8em;
     padding-top: 2em;
 
-     /*@include dektop
-         {
-            
-         }*/
+     h2
+   {
+     text-align: center;
+     color:$lightColor;
+   }
+
 }
 
 .contact-content
 {
   display: inline-block;
   width:70%;  
-  background-color:#fff;/*$lightColor;*/
-  color: #377e9c;   /*$accentColor:*/
+  background-color:$lightColor;
+  color: $accentColor;
   padding-top: 4em;
   padding-bottom: 6em;
   border-radius: 0.5em;   
 
+    h3
+   {
+     color: $darkColor;
+     padding-bottom: 2em;
+   }
+
+
+     @include desktop
+         {
+          width: 40%;
+          display: inline-block;
+          justify-content: space-between;  
+
+         }
+              .contactimg
+             {
+              display: inline-block;
+              width:40%;
+              border-radius: 0.5em;  
+             }
+
+      @include tablet
+      {
+           .contactimg
+             {
+              display:none;
+             }
+      }
+ 
 }
-/*img
-{
-    width:70%;
-    border-radius: 0.5em;  
-}*/
+
+.contactimg
+   {
+    display: none;
+   }
+
 
 .form1,.form2,.form3,.form4,.form5
 {   
@@ -89,10 +92,10 @@ input[type=submit]
    /*   
      &:hover
       {
-       background-color: (darken$accentColor,15%)
+       background-color: (darken$accentColor,15)
       } 
    */
-    color: #fff; /*$lightColor*/
+    color:$lightColor;
     border: none;
     border-radius: 0.5em; 
     padding-top: 1em;
