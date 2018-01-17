@@ -1,4 +1,4 @@
 .CustomerReviewsContainer {
-    @include flex($direction: column, $justify: center, $align: flex-start);
+    @include flex($direction: column, $justify: flex-start, $align: flex-start);
     @include margin;
 }

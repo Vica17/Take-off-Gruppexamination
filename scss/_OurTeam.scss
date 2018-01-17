@@ -4,12 +4,15 @@
 }
 
 .ourTeamImg {
-    width: 200px;
-    height: 200px;
+    width: 100px;
+    height: 100px;
 }
 
-.devContainer {
-    @include flex($direction: column, $justify: center, $align: flex-start);
+.OurTeamContainer {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-content: space-between;
 }
 
 .hidden {
