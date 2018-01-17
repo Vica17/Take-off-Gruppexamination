@@ -1,36 +1,48 @@
 
+.contacth2
+{
+     text-align: center;
+     color:$lightColor;
+     background-color:$darkColor;
+     padding-top:1em;
+     padding-bottom:1em;
+
+}
 
 .contact-wrapper
 {   
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    align-items: stretch;
     background-color:$darkColor;
     color:$lightColor;
     text-align: center;
     width: 100%;
-    padding-bottom: 8em;
-    padding-top: 2em;
-
-     h2
-   {
-     text-align: center;
-     color:$lightColor;
-   }
+    padding-bottom: 4em;
+    padding-top: 4em;
 
 }
 
 .contact-content
 {
   display: inline-block;
-  width:70%;  
+  align-items: stretch;
+  width:80%;  
   background-color:$lightColor;
   color: $accentColor;
-  padding-top: 4em;
+  padding-top: 1em;
   padding-bottom: 6em;
   border-radius: 0.5em;   
 
     h3
    {
      color: $darkColor;
-     padding-bottom: 2em;
+
+       @include desktop
+       {
+        padding-bottom:0em;
+       }
    }
 
 
@@ -39,69 +51,32 @@
           width: 40%;
           display: inline-block;
           justify-content: space-between;  
-
+          padding-top:0em;
+          padding-bottom:2em;
          }
-              .contactimg
-             {
-              display: inline-block;
-              width:40%;
-              border-radius: 0.5em;  
-             }
-
-      @include tablet
-      {
-           .contactimg
-             {
-              display:none;
-             }
-      }
  
+
+
 }
 
 .contactimg
    {
+  
     display: none;
+
+     @include desktop
+     {
+      display: inline-block;
+      width:40%;
+     }
+     img
+     {
+     width:100%;
+     border-radius: 0.5em; 
+     }
+
    }
 
-
-.form1,.form2,.form3,.form4,.form5
-{   
-  line-height: 2em;
-  letter-spacing: 0.1em;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  margin-left: 2em;
-  margin-right: 2em;
-  padding-bottom: 2em;
-}
-textarea
-{
-  width:80%;
-  background:linear-gradient(#e5e4e2,#fff);
-  flex-direction: column;
-  height: 10em;
-    border-radius: 0.5em;   
-}
-input[type=submit]
-{
-   width: 75%;
-   /*$accentColor;*/
-   background:linear-gradient(#377e9c,#295e75);
-   /*   
-     &:hover
-      {
-       background-color: (darken$accentColor,15)
-      } 
-   */
-    color:$lightColor;
-    border: none;
-    border-radius: 0.5em; 
-    padding-top: 1em;
-    padding-bottom: 1em;
-
-}
 input
 {
   width: 80%;
@@ -109,4 +84,56 @@ input
   border-radius: 0.5em;
   padding-top: 0.5em;
   padding-bottom: 0.5em;  
+}
+
+
+.form1,.form2,.form3,.form4,.form5
+{   
+  letter-spacing: 0.1em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 1em;
+  margin-right: 1em;
+  
+
+  @include desktop
+  {
+   line-heigt:0em;
+  }
+
+  @include large
+  {
+    padding-bottom:1em;
+  }
+
+}
+
+textarea
+{
+  width:80%;
+  background-image: linear-gradient(to bottom, darken($lightColor, 10%), $lightColor);
+  flex-direction: column;
+  height: 5em;
+  border-radius: 0.5em;   
+}
+
+input[type=submit]
+{
+   width: 75%;
+   background-image: linear-gradient(to bottom, lighten($accentColor, 10%), $accentColor);
+   color:$lightColor;
+   border: none;
+   border-radius: 0.5em; 
+   padding-top: 1em;
+   padding-bottom: 1em;
+
+      @include desktop
+      {
+        width:75%;
+        padding-top:0.5em;
+        padding-bottom:0.5em;
+
+      }
+
 }
