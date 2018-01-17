@@ -1,1 +1,86 @@
+.header {
+    background:
+        lighten($darkColor, 80%)
+        url(../images/header.jpg)
+        35% 50% / cover
+        no-repeat;
+    height: 300px;
+    position: relative;
+    padding: 3%;
+    margin-top: 80px;
+    @include flex(row, center, center);
+}
+.header-content {
+    text-align: center;
+    max-width: 300px;
+    @include flex(column, center, center);
 
+    img {
+        width: 250px;
+    }
+
+    p {
+        font-weight: 400;
+        padding: 0 1em 1em;
+        font-size: 1em;
+    }
+}
+.button {
+  display: none;
+}
+
+@media (min-width: 480px) {
+    .header {
+        height: 350px;
+    }
+    .header-content {
+        max-width: 400px;
+
+        img {
+            width: 300px;
+        }
+    }
+}
+@media (min-width: 768px) {
+    .header {
+        height: 500px;
+        padding: 0;
+    }
+    .header-content img {
+        width: 400px;
+    }
+    .header-content p {
+        font-size: 1.1em;
+    }
+    .button {
+        display: block;
+        background-image: linear-gradient(to bottom, lighten($accentColor, 10%), $accentColor);
+        border: none;
+        color: white;
+        padding: 10px 30px;
+        font-size: 1em;
+        cursor: pointer;
+    }
+}
+@media (min-width: 960px) {
+    .header {
+        height: 500px;
+
+    }
+    .header-content {
+      max-width: 60%;
+    }
+}
+
+@media (min-width: 1200px) {
+    .header {
+        height: 700px;
+        background-position: top;
+    }
+    .header-content {
+      max-width: 50%;
+    }
+    .header-content img {
+        width: 450px;
+    }
+}
