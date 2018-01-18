@@ -3,13 +3,48 @@
   flex-wrap: wrap;
   padding-bottom: 20%;
   padding-top: 20%;
+  @include tablet {
+    flex-wrap: nowrap; 
+  }
 }
-.theme{
+div.text-content {
+  order: 2;
+  @include tablet {
+    order: 0; 
+  }
+  @include desktop {
+    order: 0;
+  }
+}
+article.text-content {
+  order: 1;
+  @include tablet {
+    order: 0; 
+  }
+  @include desktop {
+    order: 0;
+  }
+}
+.text-content{
   width:30em;
   margin-left:2em;
   margin-right:2em;
 }
-.theme img{
+.text-content img{
   width: 100%;
   height: auto;
+}
+.tablet-image{
+  width:100%;
+  height:auto;
+  @include tablet {
+    display: block; 
+    flex-direction:column;
+  }
+  @include desktop {
+    display: none;
+  }
+  @media all and (max-width: $phone-landscape-width){
+    display: none;
+  }
 }
