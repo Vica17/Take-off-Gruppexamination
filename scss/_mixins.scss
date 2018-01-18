@@ -8,6 +8,7 @@
  align-items: $align;
 }
 
+<<<<<<< HEAD
 @mixin tablet {
   @media (min-width: #{$tablet-width}) {
     @content;
@@ -18,4 +19,28 @@
   @media (min-width: #{$desktop-width}) {
     @content;
   }
+=======
+@mixin phone-landscape {
+    @media (min-width: #{$phone-landscape-width}) {
+        @content;
+    }
+}
+
+@mixin tablet {
+    @media (min-width: #{$tablet-width}) {
+        @content;
+    }
+}
+
+@mixin desktop {
+    @media (min-width: #{$desktop-width}) {
+        @content;
+    }
+}
+
+@mixin large {
+    @media (min-width: #{$large-width}) {
+        @content;
+    }
+>>>>>>> master
 }

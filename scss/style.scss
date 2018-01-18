@@ -8,11 +8,15 @@
 @import 'contact';
 @import 'team';
 @import 'footer';
+<<<<<<< HEAD
+=======
+@import 'mixins';
+>>>>>>> master
 
 body {
     margin: 0;
     font-family: 'Roboto', sans-serif;
+    color: $darkColor;
     font-size: 16px;
-    font-weight: 300;
     line-height: 1.5;
 }
