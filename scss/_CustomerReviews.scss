@@ -1,4 +1,19 @@
 .CustomerReviewsContainer {
     @include flex($direction: column, $justify: flex-start, $align: flex-start);
     @include margin;
+
+    @include tablet {
+        @include flex($direction: column, $justify: center, $align: center);
+        flex-wrap: wrap;
+        flex-direction: row;
+        align-content: space-around;
+    }
+}
+
+.reviewContainer {
+    @include tablet {
+        @include flex($direction: column, $justify: center, $align: center);
+        width: 45%;
+        padding: 1rem;
+    }
 }

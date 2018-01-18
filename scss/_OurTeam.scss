@@ -6,6 +6,11 @@
 .ourTeamImg {
     width: 100px;
     height: 100px;
+
+    @include tablet {
+        width: 200px;
+        height: 200px;
+    }
 }
 
 .OurTeamContainer {
@@ -18,11 +23,15 @@
 .devContainer {
     @include flex($direction: column, $justify: center, $align: center);
     width: 50%;
+    @include margin($top: 0rem, $right: 0rem, $bottom: 2rem, $left: 0rem);
 }
 
-.hidden {
+
+.moreInfo {
     display: none;
-}
-.visible {
-    display: block;
+    @include margin($top: 0rem, $right: 0rem, $bottom: 0rem, $left: 0rem);
+
+    @include tablet{
+        display: block;
+    }
 }
