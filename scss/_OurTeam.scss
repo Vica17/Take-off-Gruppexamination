@@ -9,10 +9,15 @@
 }
 
 .OurTeamContainer {
-    display: flex;
+    @include flex($direction: column, $justify: center, $align: center);
     flex-wrap: wrap;
     flex-direction: row;
-    align-content: space-between;
+    align-content: space-around;
+}
+
+.devContainer {
+    @include flex($direction: column, $justify: center, $align: center);
+    width: 50%;
 }
 
 .hidden {
