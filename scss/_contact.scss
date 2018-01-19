@@ -1,14 +1,3 @@
-
-.contacth2
-{
-     text-align: center;
-     color:$lightColor;
-     background-color:$darkColor;
-     padding-top:1em;
-     padding-bottom:1em;
-
-}
-
 .contact-wrapper
 {   
     display: flex;
@@ -53,6 +42,16 @@
           padding-top:0em;
           padding-bottom:2em;
          } 
+}
+
+.contacth2
+{
+     text-align: center;
+     color:$lightColor;
+     background-color:$darkColor;
+     padding-top:1em;
+     padding-bottom:1em;
+
 }
 
 .contactimg
