@@ -5,7 +5,11 @@
      background-color:$darkColor;
      padding-top:1em;
      padding-bottom:1em;
-
+ 
+       @include desktop
+       {
+       padding-top:2em;
+       }      
 }
 
 .contact-wrapper
@@ -19,8 +23,11 @@
     text-align: center;
     width: 100%;
     padding-bottom: 4em;
-    padding-top: 2em;
 
+      @include desktop
+      {
+        padding-top:2em;
+      }
 }
 
 .contact-content
@@ -31,34 +38,40 @@
   background-color:$lightColor;
   color: $accentColor;
   padding-top: 1em;
-  padding-bottom: 6em;
+  padding-bottom: 2em;
   border-radius: 0.5em;   
 
     h3
-   {
-     color: $darkColor;
+    {
+      color: $darkColor;
 
-       @include desktop
-       {
-        padding-bottom:0em;
-       }
-   }
-
-     @include desktop
+         @include desktop
          {
-          width: 35%;
-          display: inline-block;
-          justify-content: space-between;  
-          padding-top:0em;
-          padding-bottom:2em;
-          margin-left:3em;
-          margin-right:3em;
-         } 
+           padding-bottom:0em;
+         }
+     }
+
+    @include tablet
+    {
+      width:60%;
+      padding-top: 2em;
+      padding-bottom: 4em;
+    }
+
+    @include desktop
+    {
+      width: 35%;
+      display: inline-block;
+      justify-content: space-between;  
+      padding-top:0em;
+      padding-bottom:2em;
+      margin-left:3em;
+      margin-right:3em;
+    } 
 }
 
 .contactimg
 {
-  
     display: none;
 
      @include desktop
@@ -71,7 +84,6 @@
      width:100%;
      border-radius: 0.5em; 
      }
-
 }
 
 input
@@ -83,7 +95,6 @@ input
   padding-bottom: 0.5em;  
 }
 
-
 .form1,.form2,.form3,.form4,.form5
 {   
   letter-spacing: 0.1em;
@@ -94,16 +105,15 @@ input
   margin-right: 1em;
   
 
-  @include desktop
-  {
-   line-heigt:0em;
-  }
+    @include desktop
+    {
+      line-heigt:0em;
+    }
 
-  @include large
-  {
-    padding-bottom:1em;
-  }
-
+    @include large
+    {
+      padding-bottom:1em;
+    }
 }
 
 textarea
@@ -132,5 +142,5 @@ input[type=submit]
         padding-bottom:0.5em;
 
       }
-
 }
+
