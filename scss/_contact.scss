@@ -2,7 +2,7 @@
 {
      text-align: center;
      color:$lightColor;
-     background-color:$darkColor;
+     background-color:lighten($darkColor,5%);
      padding-top:1em;
      padding-bottom:1em;
  
@@ -17,7 +17,7 @@
     display: flex;
     justify-content: space-around;
     align-items: stretch;
-    background-color:$darkColor;
+    background-color:lighten($darkColor,5%);
     color:$lightColor;
     text-align: center;
     width: 100%;
