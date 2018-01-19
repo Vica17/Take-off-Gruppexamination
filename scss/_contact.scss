@@ -1,3 +1,17 @@
+.contacth2
+{
+     text-align: center;
+     color:$lightColor;
+     background-color:$darkColor;
+     padding-top:1em;
+     padding-bottom:1em;
+ 
+       @include desktop
+       {
+       padding-top:2em;
+       }      
+}
+
 .contact-wrapper
 {   
     display: flex;
@@ -9,8 +23,11 @@
     text-align: center;
     width: 100%;
     padding-bottom: 4em;
-    padding-top: 2em;
 
+      @include desktop
+      {
+        padding-top:2em;
+      }
 }
 
 .contact-content
@@ -21,7 +38,7 @@
   background-color:$lightColor;
   color: $accentColor;
   padding-top: 1em;
-  padding-bottom: 6em;
+  padding-bottom: 2em;
   border-radius: 0.5em;   
 
     h3
@@ -36,40 +53,30 @@
 
      @include desktop
          {
-          width: 40%;
+          width: 35%;
           display: inline-block;
           justify-content: space-between;  
           padding-top:0em;
           padding-bottom:2em;
+          margin-left:3em;
+          margin-right:3em;
          } 
-}
-
-.contacth2
-{
-     text-align: center;
-     color:$lightColor;
-     background-color:$darkColor;
-     padding-top:1em;
-     padding-bottom:1em;
-
 }
 
 .contactimg
 {
-  
     display: none;
 
      @include desktop
      {
       display: inline-block;
-      width:40%;
+      width:35%;
      }
      img
      {
      width:100%;
      border-radius: 0.5em; 
      }
-
 }
 
 input
@@ -130,5 +137,5 @@ input[type=submit]
         padding-bottom:0.5em;
 
       }
-
 }
+
