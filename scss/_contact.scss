@@ -15,7 +15,6 @@
 .contact-wrapper
 {   
     display: flex;
-    align-items: center;
     justify-content: space-around;
     align-items: stretch;
     background-color:$darkColor;
@@ -29,17 +28,27 @@
         padding-top:2em;
       }
 }
+.align-contactcontent
+{
+  width:100%;
+  display:flex;
+  align-items:stretch;
+  justify-content:space-around;
+
+}
 
 .contact-content
 {
-  display: inline-block;
-  align-items: stretch;
+  display: flex;
+  align-items:stretch;
+  flex-direction:column;
+  justify-content:space-around;
   width:80%;  
   background-color:$lightColor;
   color: $accentColor;
   padding-top: 1em;
   padding-bottom: 2em;
-  border-radius: 0.5em;   
+  border-radius: 0.5em;  
 
     h3
     {
@@ -47,7 +56,11 @@
 
          @include desktop
          {
-           padding-bottom:0em;
+            padding-bottom:0em;
+         }
+         @include large
+         {
+            padding-top:1.5em;
          }
      }
 
@@ -61,13 +74,15 @@
     @include desktop
     {
       width: 35%;
-      display: inline-block;
-      justify-content: space-between;  
       padding-top:0em;
-      padding-bottom:2em;
-      margin-left:3em;
-      margin-right:3em;
+      padding-bottom:1em;
+      margin-right:2em;
+      margin-bottom:0.4em; 
     } 
+    @include large
+    {
+      margin-bottom:0.4em; 
+    }
 }
 
 .contactimg
@@ -78,6 +93,7 @@
      {
       display: inline-block;
       width:35%;
+      margin-left:2em;
      }
      img
      {
@@ -112,7 +128,7 @@ input
 
     @include large
     {
-      padding-bottom:1em;
+      padding-bottom:0.5em;
     }
 }
 
@@ -123,6 +139,16 @@ textarea
   flex-direction: column;
   height: 5em;
   border-radius: 0.5em;   
+   
+         @include desktop
+         {
+            height:3em;
+         }
+         @include large
+         {
+            height:6em;
+         }
+
 }
 
 input[type=submit]
