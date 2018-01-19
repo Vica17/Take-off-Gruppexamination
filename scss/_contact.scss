@@ -51,6 +51,13 @@
          }
      }
 
+    @include tablet
+    {
+      width:60%;
+      padding-top: 2em;
+      padding-bottom: 4em;
+    }
+
     @include desktop
     {
       width: 35%;
