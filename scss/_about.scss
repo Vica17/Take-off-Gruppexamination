@@ -1,8 +1,7 @@
 .wrap{
   @include flex(row,center,center);
   flex-wrap: wrap;
-  padding-bottom: 20%;
-  padding-top: 20%;
+  margin-bottom: $sectionMargin;
   @include tablet {
     flex-wrap: nowrap; 
   }
