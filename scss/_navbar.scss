@@ -17,7 +17,7 @@
 
     @include tablet {
         @include flex(row, space-between, center);
-   }
+    }
 
     ul {
         display: none;
@@ -62,7 +62,7 @@
     display: inline-block;
 }
 .line {
-    background-color: $darkColor; 
+    background-color: $darkColor;
     width: 25px;
     height: 2px;
     margin: 2px 0 5px 0;
