@@ -42,25 +42,25 @@
   border-radius: 0.5em;   
 
     h3
-   {
-     color: $darkColor;
+    {
+      color: $darkColor;
 
-       @include desktop
-       {
-        padding-bottom:0em;
-       }
-   }
-
-     @include desktop
+         @include desktop
          {
-          width: 35%;
-          display: inline-block;
-          justify-content: space-between;  
-          padding-top:0em;
-          padding-bottom:2em;
-          margin-left:3em;
-          margin-right:3em;
-         } 
+           padding-bottom:0em;
+         }
+     }
+
+    @include desktop
+    {
+      width: 35%;
+      display: inline-block;
+      justify-content: space-between;  
+      padding-top:0em;
+      padding-bottom:2em;
+      margin-left:3em;
+      margin-right:3em;
+    } 
 }
 
 .contactimg
@@ -88,7 +88,6 @@ input
   padding-bottom: 0.5em;  
 }
 
-
 .form1,.form2,.form3,.form4,.form5
 {   
   letter-spacing: 0.1em;
@@ -99,16 +98,15 @@ input
   margin-right: 1em;
   
 
-  @include desktop
-  {
-   line-heigt:0em;
-  }
+    @include desktop
+    {
+      line-heigt:0em;
+    }
 
-  @include large
-  {
-    padding-bottom:1em;
-  }
-
+    @include large
+    {
+      padding-bottom:1em;
+    }
 }
 
 textarea
