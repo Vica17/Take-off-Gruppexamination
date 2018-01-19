@@ -8,12 +8,20 @@
         flex-direction: row;
         align-content: space-around;
     }
+    @include large {
+        @include flex($direction: row, $justify: center, $align: center);
+    }
 }
 
 .reviewContainer {
     @include tablet {
         @include flex($direction: column, $justify: center, $align: center);
         width: 45%;
+        padding: 1rem;
+    }
+    @include large {
+        @include flex($direction: column, $justify: center, $align: center);
+        width: 22%;
         padding: 1rem;
     }
 }

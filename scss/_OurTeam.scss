@@ -24,6 +24,11 @@
     @include flex($direction: column, $justify: center, $align: center);
     width: 50%;
     @include margin($top: 0rem, $right: 0rem, $bottom: 2rem, $left: 0rem);
+
+    @include large{
+        width: 25%;
+    }
+    
 }
 
 
@@ -31,6 +36,7 @@
     display: none;
     @include margin($top: 0rem, $right: 0rem, $bottom: 0rem, $left: 0rem);
 
+    //More info visible on tablet and bigger devices
     @include tablet{
         display: block;
     }
