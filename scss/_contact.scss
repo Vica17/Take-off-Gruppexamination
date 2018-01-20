@@ -1,6 +1,13 @@
+.contact
+{
+  display:block;
+  background-color:lighten($darkColor,5%);
+}
+
 .contacth2
 {
-     text-align: center;
+     display:flex;
+     justify-content:center;
      color:$lightColor;
      background-color:lighten($darkColor,5%);
      padding-top:1em;
@@ -17,7 +24,6 @@
     display: flex;
     justify-content: space-around;
     align-items: stretch;
-    background-color:lighten($darkColor,5%);
     color:$lightColor;
     text-align: center;
     width: 100%;
@@ -94,6 +100,7 @@
      {
       display: inline-block;
       width:35%;
+      height:auto;
       margin-left:2em;
      }
      img
@@ -120,12 +127,6 @@ input
   align-items: center;
   margin-left: 1em;
   margin-right: 1em;
-  
-
-    @include desktop
-    {
-      line-heigt:0em;
-    }
 
     @include large
     {
