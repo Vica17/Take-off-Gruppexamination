@@ -4,11 +4,15 @@
   justify-content: space-between;
   margin-top: 2%;
   text-align:center;
+  position: relative;
+  top: 0.3125em;
+  left:-0.3125em;
 }
 .footer-container{
   @include flex(column,space-around,center);
   background:$accentColor;
   text-align: center;
+  padding-bottom: 1.25em;
   @include desktop {
     flex-direction: row;
   }
