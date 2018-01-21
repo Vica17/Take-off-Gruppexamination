@@ -13,49 +13,34 @@
     flex-direction: row;
   }
 }
-
-
 .footer {
   list-style: none;
   margin: 0; 
   background:$accentColor;
-  
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  
+  @include flex(row,flex-end,center)
   -webkit-flex-flow: row wrap;
-  justify-content: flex-end;
 }
-
 .footer a {
   text-decoration: none;
   display: block;
   padding: 1em;
   color: $lightColor;
 }
-
-@media all and (max-width: 800px) {
+@media (max-width: #{$tablet-width}) {
   .footer {
     justify-content: space-around;
   }
 }
-
-@media all and (max-width: 600px) {
+@media (max-width: #{$phone-landscape-width}) {
   .footer {
     -webkit-flex-flow: column wrap;
     flex-flow: column wrap;
     padding: 0;
   }
-  
   .footer a { 
     text-align: center; 
     padding: 0.625em;
   }
-
-  
   .footer li:last-of-type a {
     border-bottom: none;
   }
