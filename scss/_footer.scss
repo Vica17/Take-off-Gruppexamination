@@ -1,9 +1,11 @@
 .icon{
-  height:1.5rem;
+  height:1.1rem;
   flex-direction: row;
   justify-content: space-between;
   margin-top: 2%;
   text-align:center;
+  vertical-align: center;
+  display: inline-block;
 }
 .footer-container{
   @include flex(column,space-around,center);
@@ -19,15 +21,9 @@
   list-style: none;
   margin: 0; 
   background:$accentColor;
-  
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  
+  @include flex(row,flex-end,center)
   -webkit-flex-flow: row wrap;
-  justify-content: flex-end;
+  
 }
 
 .footer a {
@@ -37,13 +33,13 @@
   color: $lightColor;
 }
 
-@media all and (max-width: 800px) {
+@media (max-width: #{$tablet-width}) {
   .footer {
     justify-content: space-around;
   }
 }
 
-@media all and (max-width: 600px) {
+@media (max-width: #{$phone-landscape-width}) {
   .footer {
     -webkit-flex-flow: column wrap;
     flex-flow: column wrap;
