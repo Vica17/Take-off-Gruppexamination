@@ -8,7 +8,6 @@
     position: relative;
     margin-top: 80px;
     margin-bottom: $sectionMargin;
-    @include flex(row, center, center);
 
     @include phone-landscape {
         height: 350px;
@@ -30,7 +29,10 @@
 }
 .header-content {
     text-align: center;
-    @include flex(column, center, center);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     padding-top: 2em;
 
     @include tablet {
@@ -58,6 +60,7 @@
 
     p {
         width: 200px;
+        margin: 1em auto;
 
         @include phone-landscape {
           width: 300px;
@@ -75,6 +78,7 @@
     font-size: 1em;
     cursor: pointer;
     display: none;
+    margin: 0 auto;
 
     &:hover {
         background-image: linear-gradient(to bottom, lighten($accentColor, 15%), $accentColor);
@@ -83,4 +87,21 @@
     @include tablet {
         display: block;
     }
+}
+
+/* -----> Supports <----- */
+
+@supports(display: flex) {
+
+    .header {
+        @include flex(row, center, center);
+    }
+    .header-content {
+        @include flex(column, center, center);
+        position: relative;
+        top: 0;
+        left: 0;
+        transform: translate(0, 0);
+    }
+
 }
