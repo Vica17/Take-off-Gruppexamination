@@ -1,11 +1,9 @@
 .icon{
-  height:1.1rem;
+  height:1.5rem;
   flex-direction: row;
   justify-content: space-between;
   margin-top: 2%;
   text-align:center;
-  vertical-align: center;
-  display: inline-block;
 }
 .footer-container{
   @include flex(column,space-around,center);
@@ -15,43 +13,34 @@
     flex-direction: row;
   }
 }
-
-
 .footer {
   list-style: none;
   margin: 0; 
   background:$accentColor;
   @include flex(row,flex-end,center)
   -webkit-flex-flow: row wrap;
-  
 }
-
 .footer a {
   text-decoration: none;
   display: block;
   padding: 1em;
   color: $lightColor;
 }
-
 @media (max-width: #{$tablet-width}) {
   .footer {
     justify-content: space-around;
   }
 }
-
 @media (max-width: #{$phone-landscape-width}) {
   .footer {
     -webkit-flex-flow: column wrap;
     flex-flow: column wrap;
     padding: 0;
   }
-  
   .footer a { 
     text-align: center; 
     padding: 0.625em;
   }
-
-  
   .footer li:last-of-type a {
     border-bottom: none;
   }
