@@ -72,13 +72,13 @@
 }
 .button {
     background-image: linear-gradient(to bottom, lighten($accentColor, 10%), $accentColor);
-    border: none;
     color: white;
+    text-decoration: none;
     padding: 10px 30px;
-    font-size: 1em;
-    cursor: pointer;
-    display: none;
     margin: 0 auto;
+    border-radius: 0.5em;
+    width: 52px;
+    display: none;
 
     &:hover {
         background-image: linear-gradient(to bottom, lighten($accentColor, 15%), $accentColor);
