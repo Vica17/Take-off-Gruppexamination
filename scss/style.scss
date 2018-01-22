@@ -4,9 +4,9 @@
 @import 'header';
 @import 'about';
 @import 'work';
-@import 'reviews';
+@import 'CustomerReviews';
 @import 'contact';
-@import 'team';
+@import 'OurTeam';
 @import 'footer';
 
 body {
@@ -15,4 +15,16 @@ body {
     color: $darkColor;
     font-size: 16px;
     line-height: 1.5;
+}
+
+.textCenter {
+    @include flex($direction: column, $justify: center, $align: center);
+}
+
+//Makes 2 item closer
+.noneMarginBottom {
+    @include margin($top: 2rem, $right: 0, $bottom: 0, $left: 0);
+}
+.noneMargineTop {
+    @include margin($top: 0, $right: 0, $bottom: 2rem, $left: 0);
 }
