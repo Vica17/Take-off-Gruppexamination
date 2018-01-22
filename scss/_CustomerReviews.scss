@@ -8,8 +8,7 @@
 
 
     @include tablet {
-        @include flex($direction: column, $justify: center, $align: center);
-        align-items: flex-start;
+        @include flex($direction: column, $justify: center, $align: flex-start);
         -ms-flex-wrap: wrap;
             flex-wrap: wrap;
         -webkit-box-orient: horizontal;
@@ -20,7 +19,7 @@
             align-content: space-around;
     }
     @include large {
-        @include flex($direction: row, $justify: center, $align: center);
+        @include flex($direction: row, $justify: center, $align: flex-start);
     }
 }
 
@@ -28,14 +27,12 @@
     padding: 1rem;
 
     @include tablet {
-        @include flex($direction: column, $justify: center, $align: center);
+        @include flex($direction: column, $justify: center, $align: flex-start);
         width: 45%;
-        align-items: flex-start;
     }
     @include desktop {
-        @include flex($direction: column, $justify: center, $align: center);
+        @include flex($direction: column, $justify: center, $align: flex-start);
         width: 21%;
-        align-items: flex-start;
     }
 }
 
