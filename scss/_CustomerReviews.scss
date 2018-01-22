@@ -2,7 +2,8 @@
     @include flex($direction: column, $justify: flex-start, $align: flex-start);
     @include margin;
 
-    max-width: 960;
+    max-width: 960px;
+    margin: 0 auto;
 
     @include tablet {
         @include flex($direction: column, $justify: center, $align: center);
@@ -21,15 +22,15 @@
 }
 
 .reviewContainer {
+    padding: 1rem;
+
     @include tablet {
         @include flex($direction: column, $justify: center, $align: center);
         width: 45%;
-        padding: 1rem;
     }
     @include large {
         @include flex($direction: column, $justify: center, $align: center);
-        width: 22%;
-        padding: 1rem;
+        width: 21%;
     }
 }
 
