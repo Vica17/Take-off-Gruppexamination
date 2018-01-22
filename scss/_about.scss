@@ -3,7 +3,7 @@
   max-width: 960px;
   margin: 0 auto;
   margin-bottom: $sectionMargin;
-  
+
 }
 div.text-content {
   order: 2;
@@ -50,14 +50,14 @@ article.text-content {
     @include flex(row,center,center);
     flex-wrap: wrap;
     @include tablet {
-    flex-wrap: nowrap; 
+      flex-wrap: nowrap; 
+    }
   }
-}
-.text-content{
-  width:30em;
-  margin-left:2em;
-  margin-right:2em;
-  float:none;
-  padding: 0;
-}
+  .text-content{
+    width:30em;
+    margin-left:2em;
+    margin-right:2em;
+    float:none;
+    padding: 0;
+  }
 }
