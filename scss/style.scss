@@ -4,10 +4,21 @@
 @import 'header';
 @import 'about';
 @import 'work';
-@import 'CustomerReviews';
+@import 'reviews';
 @import 'contact';
-@import 'OurTeam';
+@import 'team';
 @import 'footer';
+
+html {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+*, *::before, *::after {
+    box-sizing: inherit;
+    -webkit-box-sizing: inherit;
+    -moz-box-sizing: inherit;
+}
 
 body {
     margin: 0;
@@ -15,16 +26,4 @@ body {
     color: $darkColor;
     font-size: 16px;
     line-height: 1.5;
-}
-
-.textCenter {
-    @include flex($direction: column, $justify: center, $align: center);
-}
-
-//Makes 2 item closer
-.noneMarginBottom {
-    @include margin($top: 2rem, $right: 0, $bottom: 0, $left: 0);
-}
-.noneMargineTop {
-    @include margin($top: 0, $right: 0, $bottom: 2rem, $left: 0);
 }
