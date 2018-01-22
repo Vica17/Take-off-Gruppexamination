@@ -1,6 +1,18 @@
+.contact
+{
+  display:block;
+  background-color:lighten($darkColor,5%);
+}
+.contact-width
+{
+  max-width:960px;
+  margin:0 auto;
+}
+
 .contacth2
 {
-     text-align: center;
+     display:flex;
+     @include flex($justify:center);
      color:$lightColor;
      background-color:lighten($darkColor,5%);
      padding-top:1em;
@@ -17,7 +29,6 @@
     display: flex;
     justify-content: space-around;
     align-items: stretch;
-    background-color:lighten($darkColor,5%);
     color:$lightColor;
     text-align: center;
     width: 100%;
@@ -34,16 +45,24 @@
   width:100%;
   display:flex;
   align-items:stretch;
-  justify-content:space-around;
+  justify-content:center;
+
+   
+     @include desktop
+     {
+     justify-content:space-evenly;
+     }
+     @include large
+     {
+     justify-content:space-between;
+     }
 
 }
 
 .contact-content
 {
   display: flex;
-  align-items:stretch;
-  flex-direction:column;
-  justify-content:space-around;
+  @include flex(column,space-around,stretch);
   width:80%;  
   background-color:$lightColor;
   color: $accentColor;
@@ -74,15 +93,13 @@
 
     @include desktop
     {
-      width: 35%;
-      padding-top:0em;
-      padding-bottom:1em;
-      margin-right:2em;
+      width: 45%;
       margin-bottom:0.4em; 
     } 
     @include large
     {
-      margin-bottom:0.4em; 
+      padding-top:0em;
+      padding-bottom:2em;
     }
 }
 
@@ -93,8 +110,8 @@
      @include desktop
      {
       display: inline-block;
-      width:35%;
-      margin-left:2em;
+      width:45%;
+      height:auto;
      }
      img
      {
@@ -109,23 +126,17 @@ input
   background-image: linear-gradient(to bottom, darken($lightColor, 10%), $lightColor);
   border-radius: 0.5em;
   padding-top: 0.5em;
-  padding-bottom: 0.5em;  
+  padding-bottom: 0.2em;  
 }
 
 .form1,.form2,.form3,.form4,.form5
 {   
   letter-spacing: 0.1em;
   display: flex;
-  flex-direction: column;
+  @include flex($direction:column);
   align-items: center;
   margin-left: 1em;
   margin-right: 1em;
-  
-
-    @include desktop
-    {
-      line-heigt:0em;
-    }
 
     @include large
     {
@@ -141,15 +152,18 @@ textarea
   height: 5em;
   border-radius: 0.5em;   
    
-         @include desktop
-         {
-            height:3em;
-         }
-         @include large
-         {
-            height:6em;
-         }
-
+}
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+font-family:"Roboto", sans-serif;
+}
+::-moz-placeholder { /* Firefox 19+ */
+font-family:"Roboto", sans-serif;
+}
+:-ms-input-placeholder { /* IE 10+ */
+font-family:"Roboto", sans-serif;
+}
+:-moz-placeholder { /* Firefox 18- */
+font-family:"Roboto", sans-serif;
 }
 
 input[type=submit]
@@ -165,8 +179,8 @@ input[type=submit]
       @include desktop
       {
         width:75%;
-        padding-top:0.5em;
-        padding-bottom:0.5em;
+        padding-top:0.75em;
+        padding-bottom:0.75em;
 
       }
 }
