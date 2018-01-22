@@ -15,15 +15,7 @@
 </head>
 
 <body>
-    <header class="header">
-        <div class="header-content">
-            <img src="images/logo-takeoff.png" alt="Company name">
-            <p>We are passionate about web development, we cherish your ideas and with a close collaboration we bring them into life</p>
-            <button class="button">Hire Us</button>
-        </div>
-    </header>
 
-    <nav class="navigation-wrapper">
     <nav class="navigation">
         <div class="navigation-content">
             <div class="logo-wrapper">
@@ -48,6 +40,53 @@
         </div>
     </nav>
 
+    <header class="header">
+        <div class="header-content">
+            <img src="images/logo-takeoff.png" alt="Company name">
+            <p>We are passionate about web development, we cherish your ideas and with a close collaboration we bring them into life</p>
+            <a href="" class="button">Hire Us</a>
+        </div>
+    </header>
+    <!-- Services -->
+    <section id="services">
+        <div class="wrap">
+            <article class="text-content">
+                <h2>Services</h2>
+                <p>We are experts in frontend and web development in HTML, CSS and JavaScript. We combine our technical and creative expertise to bring you  outstanding web development services. We create products with integrated responsive design and great interaction abilities, compatible to all browsers and units.Easy to administer, maintain and develop further.We always look at the bigger picture, bringing forth concepts and prototypes, offering digital solutions made to be profitable and successful.</p>
+            </article>
+            <div class="text-content">
+                <img src="images/kevin-bhagat-343433.jpg">
+                <img src="images/tablet1.jpg" class="tablet-image">
+            </div>
+        </div>
+    </section>
+    <!--About -->
+    <section id="about">
+        <div class="wrap">
+            <div class="text-content">
+                <img src="images/jesus-kiteque-224069.jpg">
+                <img src="images/tablet.jpg" class="tablet-image">
+            </div>
+            <article class="text-content">
+                <h2>About Us</h2>
+                <p>Our idea for the company Takeoff started back in 2005 when we encountered a great need for start-ups to get started with their websites. We are located in a building from the 17th century in the beautiful surroundings of Gamla stan, Stockholm.Our team has 4 frontend developers devoted to aid start-up companies to reach out on the web. Our mission is to help companies to become successful in the digital world. We do that by taking the time to understand your goals and your business plans, and by collaborating with you to design, deliver and support high-performing web solutions that bring you significant business advantage.To empower your brand and to attract visitors to your website.</p>
+            </article>
+        </div>
+    </section>
+
+    <section class="work" id="work">
+        <h2>Work</h2>
+        <p>Some of the companies we have worked with</p>
+        <div class="work-content">
+            <div><img src="images/logo-takeway.png" alt="Logo Takeway"></div>
+            <div><img src="images/logo-bestcar.png" alt="Logog Best Car"></div>
+            <div><img src="images/logo-novaflex.png" alt="Logog Novaflex"></div>
+            <div><img src="images/logo-virtualstories.png" alt="Logo Virtual Stories"></div>
+            <div><img src="images/logo-webhouse.png" alt="Logo Webhouse"></div>
+            <div><img src="images/logo-pear.png" alt="Logo Pear"></div>
+        </div>
+    </section>
+
     <!-- Customer Reviews -->
     <h2 class="textCenter">Customer Reviews</h2>
     <div class="CustomerReviewsContainer">
@@ -69,7 +108,7 @@
             <p class="reviewName"><b>- Olivia Brown</b></p>
         </div>
     </div>
-    
+
     <!--    Our team    -->
     <h2 class="textCenter">Our team</h2>
     <div class="OurTeamContainer">
@@ -102,21 +141,69 @@
             <p class="moreInfo">pernilla.qvist@takeoff.com</p>
         </div>
     </div>
+<!--Contact-->
+<div class="contacth2">
+  <h2>Contact</h2>
+</div>
 
-    <section class="work" id="work">
-        <h2>Work</h2>
-        <p>Some of the companies we have worked with</p>
-        <div class="work-content">
-            <div><img src="images/logo-takeway.png" alt="Logo Takeway"></div>
-            <div><img src="images/logo-bestcar.png" alt="Logog Best Car"></div>
-            <div><img src="images/logo-novaflex.png" alt="Logog Novaflex"></div>
-            <div><img src="images/logo-virtualstories.png" alt="Logo Virtual Stories"></div>
-            <div><img src="images/logo-webhouse.png" alt="Logo Webhouse"></div>
-            <div><img src="images/logo-pear.png" alt="Logo Pear"></div>
-        </div>
-    </section>
+<section class="contact-wrapper" id="contact">
 
-    <!--    JavaScript  -->
-    <script src="js/script.js"></script>
+ <div class="align-contactcontent">
+
+  <div class="contactimg">
+    <img src="images/contactimg.png" alt="A hand writing on paper">
+  </div>
+
+  <div class ="contact-content">
+      <h3>Get in touch</h3>
+
+        <form action="" id="formOne">
+                <div class="form1">
+                   <label for="name">Name</label>
+                   <input type="text" name="name" id="name" placeholder="Name"><br>
+                </div>
+
+                <div class="form3">
+                   <label for="email">Email</label>
+                   <input type="email" name="email" id="email" placeholder="Email"><br>
+                </div>
+
+                <div class="form2">
+                   <label for="phonenumber">Phonenumber</label>
+                   <input type="number" name="phonenumber" id="phonenumber" placeholder="Phonenumber"><br>
+                </div>
+
+                <div class="form5">
+                    <label for="textarea">Message</label>
+                    <textarea name="message" name="message" id="message" placeholder="Message"></textarea>
+                    <br>
+                </div>
+
+                <input type="submit" value="Send">
+       </form>
+       </div>
+ </div> <!--contact-content-->
+</section><!--contact-wrapper-->
+
+<!--End of contact-->
+
+<!--Footer-->
+<footer class="footer-container">
+    <ul class="footer">
+        <li><a href=""><img src="images/m.png" alt="" class="icon">Lilla Nygatan 6, 111 28 Stockholm</a></li>
+        <li><a href=""><img src="images/phone.png" alt="" class="icon">+46 77 133 33 10</a></li>
+        <li><a href=""><img src="images/email.png" alt="" class="icon">info@takeoff.com</a></li>
+    </ul>
+    <div>
+        <a href=""><img src="images/f.png" alt="" class="icon"></a>
+        <a href=""><img src="images/insta.png" alt="" class="icon"></a>
+        <a href=""><img src="images/l.png" alt="" class="icon"></a>
+        <a href=""><img src="images/T.png" alt="" class="icon"></a>
+    </div>
+</footer>
+
+<script src="js/script.js"></script>
+
 </body>
+
 </html>
