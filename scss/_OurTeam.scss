@@ -15,9 +15,14 @@
 
 .OurTeamContainer {
     @include flex($direction: column, $justify: center, $align: center);
-    flex-wrap: wrap;
-    flex-direction: row;
-    align-content: space-around;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-line-pack: distribute;
+        align-content: space-around;
 }
 
 .devContainer {
@@ -40,4 +45,3 @@
     @include tablet{
         display: block;
     }
-}
