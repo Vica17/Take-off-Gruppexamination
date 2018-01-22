@@ -1,6 +1,8 @@
 .wrap{
   @include flex(row,center,center);
   flex-wrap: wrap;
+  max-width: 960px;
+  margin: 0 auto;
   margin-bottom: $sectionMargin;
   @include tablet {
     flex-wrap: nowrap; 
