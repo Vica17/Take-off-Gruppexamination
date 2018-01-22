@@ -1,6 +1,8 @@
 .wrap{
   @include flex(row,center,center);
   flex-wrap: wrap;
+  max-width: 960px;
+  margin: 0 auto;
   margin-bottom: $sectionMargin;
   @include tablet {
     flex-wrap: nowrap; 
@@ -36,14 +38,12 @@ article.text-content {
 .tablet-image{
   width:100%;
   height:auto;
+  display: none;
   @include tablet {
     display: block; 
     flex-direction:column;
   }
   @include desktop {
     display: none;
-  }
-  @media (max-width: #{$phone-landscape-width}){
-    display: none;
-  }
+  } 
 }

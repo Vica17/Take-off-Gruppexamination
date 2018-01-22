@@ -21,35 +21,25 @@
   list-style: none;
   margin: 0; 
   background:$accentColor;
-  @include flex(row,flex-end,center)
-  -webkit-flex-flow: row wrap;
+  -webkit-flex-flow: column wrap;
+    flex-flow: column wrap;
+    padding: 0;
+  @include tablet {
+    @include flex(row,flex-end,center)
+    -webkit-flex-flow:row wrap;
+  }
+  
 }
 .footer a {
   text-decoration: none;
-  display: block;
-  padding: 1em;
+  display: block; 
+  padding: 0.625em;
   color: $lightColor;
 }
-@media (max-width: #{$tablet-width}) {
-  .footer {
-    justify-content: space-around;
-  }
-}
-@media (max-width: #{$phone-landscape-width}) {
-  .footer {
-    -webkit-flex-flow: column wrap;
-    flex-flow: column wrap;
-    padding: 0;
-  }
-  .footer a { 
-    text-align: center; 
-    padding: 0.625em;
-  }
-  .footer li:last-of-type a {
-    border-bottom: none;
-  }
-}
 
+
+  
+  
 
 
 
