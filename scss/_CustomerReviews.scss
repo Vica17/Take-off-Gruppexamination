@@ -6,8 +6,10 @@
     margin: 0 auto;
     margin-bottom: $sectionMargin;
 
+
     @include tablet {
         @include flex($direction: column, $justify: center, $align: center);
+        align-items: flex-start;
         -ms-flex-wrap: wrap;
             flex-wrap: wrap;
         -webkit-box-orient: horizontal;
@@ -28,10 +30,12 @@
     @include tablet {
         @include flex($direction: column, $justify: center, $align: center);
         width: 45%;
+        align-items: flex-start;
     }
     @include desktop {
         @include flex($direction: column, $justify: center, $align: center);
         width: 21%;
+        align-items: flex-start;
     }
 }
 
