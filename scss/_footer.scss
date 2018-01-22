@@ -1,0 +1,47 @@
+.icon{
+  height:1.5rem;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 2%;
+  text-align:center;
+  position: relative;
+  top: 0.3125em;
+  left:-0.3125em;
+}
+.footer-container{
+  @include flex(column,space-around,center);
+  background:$accentColor;
+  text-align: center;
+  padding-bottom: 1.25em;
+  @include desktop {
+    flex-direction: row;
+  }
+}
+.footer {
+  list-style: none;
+  margin: 0; 
+  background:$accentColor;
+  -webkit-flex-flow: column wrap;
+    flex-flow: column wrap;
+    padding: 0;
+  @include tablet {
+    @include flex(row,flex-end,center)
+    -webkit-flex-flow:row wrap;
+  }
+  
+}
+.footer a {
+  text-decoration: none;
+  display: block; 
+  padding: 0.625em;
+  color: $lightColor;
+}
+
+
+  
+  
+
+
+
+
+

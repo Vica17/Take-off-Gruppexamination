@@ -1,0 +1,36 @@
+.work {
+    background-color: lighten($darkColor, 80%);
+    padding-top: 1em;
+    margin-bottom: $sectionMargin;
+    text-align: center;
+}
+.work-content {
+    width: 100%;
+    max-width: 960px;
+    padding: 2em 0;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    flex-wrap: wrap;
+
+    div {
+        flex-basis: calc(33% - 2em);
+        padding: 1em;
+
+        @include phone-landscape {
+            flex-basis: calc(30% - 3em);
+            padding: 1.5em;
+        }
+
+        @include tablet {
+            padding: 1em;
+            flex-basis: calc(16.6% - 2em);
+        }
+
+    }
+
+    img {
+        width: 100%;
+    }
+}
