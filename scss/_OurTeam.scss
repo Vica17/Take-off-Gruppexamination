@@ -20,14 +20,9 @@
     margin: 0 auto;
     margin-bottom: $sectionMargin;
 
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -ms-flex-line-pack: distribute;
-        align-content: space-around;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-content: space-around;
 }
 
 .devContainer {

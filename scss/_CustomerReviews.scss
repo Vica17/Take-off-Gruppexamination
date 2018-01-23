@@ -9,18 +9,17 @@
 
     @include tablet {
         @include flex($direction: column, $justify: center, $align: flex-start);
-        -ms-flex-wrap: wrap;
             flex-wrap: wrap;
-        -webkit-box-orient: horizontal;
-        -webkit-box-direction: normal;
-            -ms-flex-direction: row;
-                flex-direction: row;
-        -ms-flex-line-pack: distribute;
+            flex-direction: row;
             align-content: space-around;
     }
     @include large {
         @include flex($direction: row, $justify: center, $align: flex-start);
     }
+
+    @supports not (display: flex) {
+        display: none;
+      }
 }
 
 .reviewContainer {
