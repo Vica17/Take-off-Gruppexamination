@@ -11,8 +11,7 @@
 
 .contacth2
 {
-     display:flex;
-     @include flex($justify:center);
+     text-align:center;
      color:$lightColor;
      background-color:lighten($darkColor,5%);
      padding-top:1em;
@@ -26,9 +25,7 @@
 
 .contact-wrapper
 {   
-    display: flex;
-    justify-content: space-around;
-    align-items: stretch;
+    display: inline-block;
     color:$lightColor;
     text-align: center;
     width: 100%;
@@ -43,32 +40,19 @@
 .align-contactcontent
 {
   width:100%;
-  display:flex;
-  align-items:stretch;
-  justify-content:center;
-
-   
-     @include desktop
-     {
-     justify-content:space-evenly;
-     }
-     @include large
-     {
-     justify-content:space-between;
-     }
-
 }
 
 .contact-content
 {
-  display: flex;
-  @include flex(column,space-around,stretch);
+  display: inline-block;
+  float: none;
   width:80%;  
   background-color:$lightColor;
   color: $accentColor;
   padding-top: 1em;
   padding-bottom: 2em;
   border-radius: 0.5em;  
+
 
     h3
     {
@@ -94,6 +78,7 @@
     @include desktop
     {
       width: 45%;
+      float: right;
       margin-bottom:0.4em; 
     } 
     @include large
@@ -112,6 +97,7 @@
       display: inline-block;
       width:45%;
       height:auto;
+      float: left;
      }
      img
      {
@@ -122,53 +108,63 @@
 
 input
 {
-  width: 80%;
+  width: 100%;
   background-image: linear-gradient(to bottom, darken($lightColor, 10%), $lightColor);
   border-radius: 0.5em;
   padding-top: 0.5em;
   padding-bottom: 0.2em;  
+
 }
 
 .form1,.form2,.form3,.form4,.form5
 {   
   letter-spacing: 0.1em;
-  display: flex;
-  @include flex($direction:column);
-  align-items: center;
-  margin-left: 1em;
-  margin-right: 1em;
+  padding-bottom:1.5em;
+  margin-left: 2em;
+  margin-right: 2em;
+
+    @include tablet
+    {
+      margin-left: 3em;
+      margin-right: 3em;
+    }
 
     @include large
     {
-      padding-bottom:0.5em;
+      padding-bottom:2em;
     }
 }
 
 textarea
 {
-  width:80%;
+  width:100%;//80
   background-image: linear-gradient(to bottom, darken($lightColor, 10%), $lightColor);
-  flex-direction: column;
+  
   height: 5em;
   border-radius: 0.5em;   
-   
+  
 }
-::-webkit-input-placeholder { /* Chrome/Opera/Safari */
-font-family:"Roboto", sans-serif;
+
+::-webkit-input-placeholder 
+{ /* Chrome/Opera/Safari */
+  font-family:"Roboto", sans-serif;
 }
-::-moz-placeholder { /* Firefox 19+ */
-font-family:"Roboto", sans-serif;
+::-moz-placeholder 
+{ /* Firefox 19+ */
+  font-family:"Roboto", sans-serif;
 }
-:-ms-input-placeholder { /* IE 10+ */
-font-family:"Roboto", sans-serif;
+:-ms-input-placeholder 
+{ /* IE 10+ */
+  font-family:"Roboto", sans-serif;
 }
-:-moz-placeholder { /* Firefox 18- */
-font-family:"Roboto", sans-serif;
+:-moz-placeholder 
+{ /* Firefox 18- */
+  font-family:"Roboto", sans-serif;
 }
 
 input[type=submit]
 {
-   width: 75%;
+   width: 80%;
    background-image: linear-gradient(to bottom, lighten($accentColor, 10%), $accentColor);
    color:$lightColor;
    border: none;
@@ -176,12 +172,96 @@ input[type=submit]
    padding-top: 1em;
    padding-bottom: 1em;
 
+    
       @include desktop
       {
-        width:75%;
         padding-top:0.75em;
         padding-bottom:0.75em;
-
+      }
+      @include large
+      {
+        padding-bottom:1.25em;
       }
 }
 
+
+@supports (display:flex)
+{
+  .contact-content
+    {
+      display: flex;
+      @include flex(column,space-around,stretch);
+    }
+
+  .align-contactcontent
+   {
+      display:flex;
+      align-items:stretch;
+      justify-content:center;
+
+   
+     @include desktop
+      {
+        justify-content:space-evenly;
+      }
+
+     @include large
+      {
+        justify-content:space-around;
+      }
+   }
+
+  .contact-wrapper
+   {   
+      display: flex;
+      justify-content: space-around;
+      align-items: stretch;
+   }
+
+  .contacth2
+   { 
+      display:flex;
+      @include flex($justify:center);   
+   }
+
+  textarea 
+   {
+      width:80%;
+      @include flex($direction:column);
+   }  
+
+  .form1,.form2,.form3,.form4,.form5
+   {
+      margin-left: 1em;
+      margin-right: 1em;
+      padding-bottom:0em;
+      @include flex($direction:column,$align:center);
+
+        @include large
+         {
+          padding-bottom:0.5em;
+         }
+   }
+
+   input
+   {
+      width:80%;
+   }
+
+   input[type=submit]
+   {
+      width: 75%; 
+ 
+       @include desktop
+       {
+         padding-top:0.75em;
+         padding-bottom:0.75em;
+       }
+
+       @include large
+       {
+        padding-bottom:0.75em;
+       }
+    }    
+
+}
