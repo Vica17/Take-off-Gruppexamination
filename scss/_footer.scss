@@ -12,6 +12,7 @@
   @include flex(column,space-around,center);
   background:$accentColor;
   text-align: center;
+  padding-top: 1.25em;
   padding-bottom: 1.25em;
   @include desktop {
     flex-direction: row;
@@ -22,19 +23,26 @@
   margin: 0; 
   background:$accentColor;
   -webkit-flex-flow: column wrap;
-    flex-flow: column wrap;
-    padding: 0;
+  flex-flow: column wrap;
+  padding: 0;
   @include tablet {
     @include flex(row,flex-end,center)
     -webkit-flex-flow:row wrap;
   }
-  
+
 }
 .footer a {
   text-decoration: none;
   display: block; 
   padding: 0.625em;
   color: $lightColor;
+}
+.social-media a{
+  padding-right: 1em;
+
+}
+.social-media a:last-child{
+  padding-right: 0;
 }
 
 
