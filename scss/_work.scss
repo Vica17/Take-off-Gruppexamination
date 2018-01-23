@@ -10,28 +10,48 @@
     max-width: 960px;
     padding: 2em 0;
     margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
-    flex-wrap: wrap;
+    overflow: hidden;
 
     div {
-        flex-basis: calc(33% - 2em);
         padding: 1em;
+        width: calc(33% - 2em);
+        float: left;
 
         @include phone-landscape {
-            flex-basis: calc(30% - 3em);
             padding: 1.5em;
+            width: calc(30% - 3em);
         }
 
         @include tablet {
             padding: 1em;
-            flex-basis: calc(16.6% - 2em);
+            width: calc(16.6% - 2em);
         }
-
     }
 
     img {
         width: 100%;
+    }
+}
+
+/* -----> Supports <----- */
+
+@supports(display: flex) {
+
+    .work-content {
+        @include flex(row, space-between, flex-end);
+        flex-wrap: wrap;
+
+        div {
+            float: none;
+            flex-basis: calc(33% - 2em);
+
+            @include phone-landscape {
+                flex-basis: calc(30% - 3em);
+            }
+
+            @include tablet {
+                flex-basis: calc(16.6% - 2em);
+            }
+        }
     }
 }
