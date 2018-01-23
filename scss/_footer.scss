@@ -23,13 +23,13 @@
   margin: 0; 
   background:$accentColor;
   -webkit-flex-flow: column wrap;
-    flex-flow: column wrap;
-    padding: 0;
+  flex-flow: column wrap;
+  padding: 0;
   @include tablet {
     @include flex(row,flex-end,center)
     -webkit-flex-flow:row wrap;
   }
-  
+
 }
 .footer a {
   text-decoration: none;
