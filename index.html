@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Takeoff</title>
+
+    <link rel="icon" href="images/favicon.png">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700|Roboto:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <nav class="navigation">
+        <div class="navigation-content">
+            <div class="logo-wrapper">
+                <a href="index.html"><img src="images/logo.png" class="logo" alt="Company logo"></a>
+            </div>
+            <ul class="navigation-menu" id="content-toggle">
+                <li><a href="#services" onclick="closeMenu();">Services</a></li>
+                <li><a href="#about" onclick="closeMenu();">About Us</a></li>
+                <li><a href="#work" onclick="closeMenu();">Work</a></li>
+                <li><a href="#reviews" onclick="closeMenu();">Customer Reviews</a></li>
+                <li><a href="#contact" onclick="closeMenu();">Contact</a></li>
+            </ul>
+            <div class="mobile-menu">
+                <a href="#" onclick="navToggle(); return false;">
+                    <div class="menu-icon">
+                        <div class="line"></div>
+                        <div class="line"></div>
+                        <div class="line"></div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="header">
+        <div class="header-content">
+            <img src="images/logo-takeoff.png" alt="Company name">
+            <p>We are passionate about web development, we cherish your ideas and with a close collaboration we bring them into life</p>
+            <a href="#contact" class="button">Hire Us</a>
+        </div>
+    </header>
+
+    <!-- Services -->
+    <section id="services">
+        <div class="wrap">
+            <article class="text-content">
+                <h2>Services</h2>
+                <p>We are experts in frontend and web development in HTML, CSS and JavaScript. We combine our technical and creative expertise to bring you  outstanding web development services. We create products with integrated responsive design and great interaction abilities, compatible to all browsers and units.Easy to administer, maintain and develop further.We always look at the bigger picture, bringing forth concepts and prototypes, offering digital solutions made to be profitable and successful.</p>
+            </article>
+            <div class="text-content">
+                <img src="images/computer.jpg" alt="computer">
+                <img src="images/writing.jpg" alt="writing" class="tablet-image">
+            </div>
+        </div>
+    </section>
+
+    <!--About -->
+    <section id="about">
+        <div class="wrap">
+            <div class="text-content">
+                <img src="images/glasses.jpg" alt="glasses">
+                <img src="images/tablet.jpg" alt="tablet" class="tablet-image">
+            </div>
+            <article class="text-content">
+                <h2>About Us</h2>
+                <p>Our idea for the company Takeoff started back in 2005 when we encountered a great need for start-ups to get started with their websites. We are located in a building from the 17th century in the beautiful surroundings of Gamla stan, Stockholm.Our team has 4 frontend developers devoted to aid start-up companies to reach out on the web. Our mission is to help companies to become successful in the digital world. We do that by taking the time to understand your goals and your business plans, and by collaborating with you to design, deliver and support high-performing web solutions that bring you significant business advantage.To empower your brand and to attract visitors to your website.</p>
+            </article>
+        </div>
+    </section>
+
+    <section class="work" id="work">
+        <h2>Work</h2>
+        <p>Some of the companies we have worked with</p>
+        <div class="work-content">
+            <div><img src="images/logo-takeway.png" alt="Logo Takeway"></div>
+            <div><img src="images/logo-bestcar.png" alt="Logog Best Car"></div>
+            <div><img src="images/logo-novaflex.png" alt="Logog Novaflex"></div>
+            <div><img src="images/logo-virtualstories.png" alt="Logo Virtual Stories"></div>
+            <div><img src="images/logo-webhouse.png" alt="Logo Webhouse"></div>
+            <div><img src="images/logo-pear.png" alt="Logo Pear"></div>
+        </div>
+    </section>
+
+    <!-- Customer Reviews -->
+    <h2 class="textCenter" id="reviews">Customer Reviews</h2>
+    <div class="CustomerReviewsContainer">
+        <div class="reviewContainer">
+            <p class="italic noneMarginBottom">“I desperately needed a website in a short amount of time. The company Takeoff took care of my case and delivered everything with high standards and outstanding results.” </p>
+            <p class="reviewName"><b>- Natalie Hoffman</b></p>
+        </div>
+        <div class="reviewContainer">
+            <p class="italic noneMarginBottom">“I highly recommend them.Everything was delivered on time with excellent results . It was a pleasure to work with a professional company such as Takeoff.”</p>
+            <p class="reviewName"><b>- Robert Wald</b></p>
+        </div>
+        <div class="reviewContainer">
+            <p class="italic noneMarginBottom">“Takeoff is a fantastic, talented design agency. I would definitely recommend them if you're building a new website!”</p>
+            <p class="reviewName"><b>- Oskar Green</b></p>
+        </div>
+
+        <div class="reviewContainer">
+            <p class="italic noneMarginBottom">“It is great working with the company Takeoff. Everyone is very professional and passionate about their work. They will make sure to help you grow and deliver an excellent experience for your customers.”</p>
+            <p class="reviewName"><b>- Olivia Brown</b></p>
+        </div>
+    </div>
+
+    <!--Contact-->
+    <section class="contact">
+    <div class="contact-width">
+        <div class="contacth2">
+            <h2>Contact</h2>
+        </div>
+
+            <div class="contact-wrapper" id="contact">
+
+            <div class="align-contactcontent">
+
+                <div class="contactimg">
+                    <img src="images/contactimg.png" alt="A hand writing on paper">
+                </div>
+
+                <div class ="contact-content">
+
+                    <h3>Get in touch</h3>
+
+                    <form action="" id="formOne">
+                        <div class="form1">
+                          <label for="name">Name</label>
+                          <input type="text" name="name" id="name" placeholder="Name"><br>
+                        </div>
+
+                        <div class="form3">
+                           <label for="email">Email</label>
+                           <input type="email" name="email" id="email" placeholder="Email"><br>
+                         </div>
+
+                        <div class="form2">
+                           <label for="phonenumber">Phonenumber</label>
+                           <input type="number" name="phonenumber" id="phonenumber" placeholder="Phonenumber"><br>
+                        </div>
+
+                        <div class="form5">
+                           <label for="textarea">Message</label>
+                           <textarea name="message" name="message" id="message" placeholder="Message"></textarea>
+                           <br>
+                        </div>
+
+                        <input type="submit" value="Send">
+                    </form>
+                </div><!--contact-content-->
+            </div> <!--align-contactcontent-->
+        </div><!--contact-wrapper-->
+    </div>
+    </section>
+
+    <!--    Our team    -->
+    <h2 class="textCenter">Our team</h2>
+    <section class="OurTeamContainer">
+        <div class="devContainer">
+            <img class="ourTeamImg" src="images/beratcan.png" alt="Photo of Beratcan">
+            <p class="noneMarginBottom"><strong>Beratcan Acil</strong></p>
+            <p class="noneMargineTop">Frontend developer</p>
+            <p class="moreInfo">+46760222729</p>
+            <p class="moreInfo">beratcan.acil@takeoff.com</p>
+        </div>
+        <div class="devContainer">
+            <img class="ourTeamImg" src="images/johanna.png" alt="Photo of Johanna">
+            <p class="noneMarginBottom"><strong>Johanna Hörnell</strong></p>
+            <p class="noneMargineTop">Frontend developer</p>
+            <p class="moreInfo">+46738443536</p>
+            <p class="moreInfo">johanna.hornell@takeoff.com</p>
+        </div>
+        <div class="devContainer">
+            <img class="ourTeamImg" src="images/victoria.png" alt="Photo of Victoria">
+            <p class="noneMarginBottom"><strong>Victoria Nordkvist</strong></p>
+            <p class="noneMargineTop">Frontend developer</p>
+            <p class="moreInfo">+46798335283</p>
+            <p class="moreInfo">victoria.nordkvist@takeoff.com</p>
+        </div>
+        <div class="devContainer">
+            <img class="ourTeamImg" src="images/pernilla.png" alt="Photo of Pernilla">
+            <p class="noneMarginBottom"><strong>Pernilla Qvist</strong></p>
+            <p class="noneMargineTop">Frontend creator</p>
+            <p class="moreInfo">+46751229496</p>
+            <p class="moreInfo">pernilla.qvist@takeoff.com</p>
+        </div>
+    </section>
+
+    <!--Footer-->
+    <footer class="footer-container">
+        <ul class="footer">
+            <li><a href=""><img src="images/m.png" alt="map" class="icon">Lilla Nygatan 6, 111 28 Stockholm</a></li>
+            <li><a href=""><img src="images/phone.png" alt="phone" class="icon">+46 77 133 33 10</a></li>
+            <li><a href=""><img src="images/email.png" alt="email" class="icon">info@takeoff.com</a></li>
+        </ul>
+        <div class="social-media">
+            <a href=""><img src="images/f.png" alt="facebook" class="icon"></a>
+            <a href=""><img src="images/insta.png" alt="instagram" class="icon"></a>
+            <a href=""><img src="images/l.png" alt="linkdin" class="icon"></a>
+            <a href=""><img src="images/T.png" alt="twitter" class="icon"></a>
+        </div>
+    </footer>
+
+<script src="js/script.js"></script>
+
+</body>
+
+</html>
