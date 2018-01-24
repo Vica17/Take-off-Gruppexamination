@@ -13,14 +13,9 @@
     max-width: 960px;
     margin: 0 auto;
 
-    @include flex(column, space-between, flex-start);
-
-    @include tablet {
-        @include flex(row, space-between, center);
-    }
-
     ul {
         display: none;
+        float: right;
 
         @include tablet {
             background-color: #fff;
@@ -51,6 +46,7 @@
     }
 }
 .logo-wrapper {
+    float: left;
     padding-left: 20px;
 }
 .logo {
@@ -94,5 +90,25 @@
         li {
             display: inline-block;
         }
+    }
+}
+
+/* -----> Supports <----- */
+
+@supports(display: flex) {
+
+    .navigation-content {
+        @include flex(column, space-between, flex-start);
+
+        @include tablet {
+            @include flex(row, space-between, center);
+        }
+
+        ul {
+            float: none;
+        }
+    }
+    .logo-wrapper {
+        float: none;
     }
 }
