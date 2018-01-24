@@ -1,7 +1,5 @@
 .icon{
   height:1.5rem;
-  flex-direction: row;
-  justify-content: space-between;
   margin-top: 2%;
   text-align:center;
   position: relative;
@@ -9,45 +7,76 @@
   left:-0.3125em;
 }
 .footer-container{
-  @include flex(column,space-around,center);
   background:$accentColor;
   text-align: center;
   padding-top: 1.25em;
   padding-bottom: 1.25em;
-  @include desktop {
-    flex-direction: row;
+  a{
+    &:hover{
+      opacity: 0.7;
+    }
   }
 }
 .footer {
   list-style: none;
   margin: 0; 
   background:$accentColor;
-  -webkit-flex-flow: column wrap;
-  flex-flow: column wrap;
   padding: 0;
-  @include tablet {
-    @include flex(row,flex-end,center)
-    -webkit-flex-flow:row wrap;
+  display: inline-block;
+  a{
+    text-decoration: none; 
+    padding: 0.625em;
+    color: $lightColor; 
   }
-
+  li {
+    display: block;
+    @include phone-landscape { 
+      display: inline-block;
+    } 
+  }
 }
-.footer a {
-  text-decoration: none;
-  display: block; 
-  padding: 0.625em;
-  color: $lightColor;
-}
-.social-media a{
-  padding-right: 1em;
+.social-media{
+  display: inline-block;
+  a{
+    padding-right: 1em;
 
-}
-.social-media a:last-child{
-  padding-right: 0;
+  }
+  a:last-child{
+    padding-right: 0;
+  }
 }
 
+@supports(display:flex){
+  .footer-container{
+    @include flex(column,space-around,center);
+    @include desktop {
+      flex-direction: row;
+    }
+  }
+  .footer {
+    -webkit-flex-flow: column wrap;
+    flex-flow: column wrap;
+    @include tablet {
+      @include flex(row,flex-end,center)
+      -webkit-flex-flow:row wrap;
+    }
+  }
+  .icon{
+    flex-direction: row;
+    justify-content: space-between; 
+  }
+} 
 
-  
-  
+
+
+
+
+
+
+
+
+
+
 
 
 
