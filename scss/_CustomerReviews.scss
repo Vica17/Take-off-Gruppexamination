@@ -1,39 +1,38 @@
 .CustomerReviewsContainer {
-    @include flex($direction: column, $justify: flex-start, $align: flex-start);
+    @include flex(column, flex-start, flex-start);
+    flex-wrap: wrap;
     @include margin;
-
     max-width: 960px;
     margin: 0 auto;
     margin-bottom: $sectionMargin;
-
-
     @include tablet {
-        @include flex($direction: column, $justify: center, $align: flex-start);
-            flex-wrap: wrap;
-            flex-direction: row;
-            align-content: space-around;
+        @include flex(row, center, flex-start);
     }
-    @include large {
-        @include flex($direction: row, $justify: center, $align: flex-start);
+}
+.reviewContainer {
+    padding: 1rem;
+    @include tablet {
+        flex-basis: calc(50% - 2rem);
     }
+    @include desktop {
+        flex-basis: calc(25% - 2rem);
+    }
+}
 
-    @supports not (display: flex) {
-        display: none;
-      }
+.italic {
+    font-style: italic;
 }
 
 .reviewContainer {
     padding: 1rem;
-
+    width: calc(100% - 2rem);
     @include tablet {
-        @include flex($direction: column, $justify: center, $align: flex-start);
-        width: 45%;
+        flex-basis: calc(50% - 2rem);
     }
     @include desktop {
-        @include flex($direction: column, $justify: center, $align: flex-start);
-        width: 21%;
+        flex-basis: calc(25% - 2rem);
     }
-}
+ }
 
 .italic {
     font-style: italic;
