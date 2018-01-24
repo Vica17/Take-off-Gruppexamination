@@ -3,6 +3,7 @@
   display:block;
   background-color:lighten($darkColor,5%);
 }
+
 .contact-width
 {
   max-width:960px;
@@ -37,10 +38,6 @@
         padding-top:2em;
       }
 }
-.align-contactcontent
-{
-  width:100%;
-}
 
 .contact-content
 {
@@ -53,7 +50,6 @@
   padding-bottom: 2em;
   border-radius: 0.5em;  
 
-
     h3
     {
       color: $darkColor;
@@ -61,11 +57,7 @@
          @include desktop
          {
             padding-bottom:0em;
-         }
-         @include large
-         {
-            padding-top:1.5em;
-         }
+         } 
      }
 
     @include tablet
@@ -81,11 +73,6 @@
       float: right;
       margin-bottom:0.4em; 
     } 
-    @include large
-    {
-      padding-top:0em;
-      padding-bottom:2em;
-    }
 }
 
 .contactimg
@@ -113,7 +100,6 @@ input
   border-radius: 0.5em;
   padding-top: 0.5em;
   padding-bottom: 0.2em;  
-
 }
 
 .form1,.form2,.form3,.form4,.form5
@@ -128,21 +114,14 @@ input
       margin-left: 3em;
       margin-right: 3em;
     }
-
-    @include large
-    {
-      padding-bottom:2em;
-    }
 }
 
 textarea
 {
-  width:100%;//80
+  width:100%;
   background-image: linear-gradient(to bottom, darken($lightColor, 10%), $lightColor);
-  
   height: 5em;
-  border-radius: 0.5em;   
-  
+  border-radius: 0.5em;     
 }
 
 ::-webkit-input-placeholder 
@@ -171,16 +150,17 @@ input[type=submit]
    border-radius: 0.5em; 
    padding-top: 1em;
    padding-bottom: 1em;
+   cursor:pointer;
 
-    
+      &:hover
+      {
+      background-image: linear-gradient(to bottom, lighten($accentColor, 15%), $accentColor);
+      }
+
       @include desktop
       {
         padding-top:0.75em;
         padding-bottom:0.75em;
-      }
-      @include large
-      {
-        padding-bottom:1.25em;
       }
 }
 
@@ -188,39 +168,17 @@ input[type=submit]
 @supports (display:flex)
 {
   .contact-content
-    {
-      display: flex;
+   { 
       @include flex(column,space-around,stretch);
-    }
-
-  .align-contactcontent
-   {
-      display:flex;
-      align-items:stretch;
-      justify-content:center;
-
-   
-     @include desktop
-      {
-        justify-content:space-evenly;
-      }
-
-     @include large
-      {
-        justify-content:space-around;
-      }
    }
 
   .contact-wrapper
    {   
-      display: flex;
-      justify-content: space-around;
-      align-items: stretch;
+      @include flex($justify:space-around,$align:stretch);    
    }
 
   .contacth2
    { 
-      display:flex;
       @include flex($justify:center);   
    }
 
@@ -236,11 +194,6 @@ input[type=submit]
       margin-right: 1em;
       padding-bottom:0em;
       @include flex($direction:column,$align:center);
-
-        @include large
-         {
-          padding-bottom:0.5em;
-         }
    }
 
    input
@@ -256,11 +209,6 @@ input[type=submit]
        {
          padding-top:0.75em;
          padding-bottom:0.75em;
-       }
-
-       @include large
-       {
-        padding-bottom:0.75em;
        }
     }    
 
