@@ -14,8 +14,6 @@
 {
      text-align:center;
      color:$lightColor;
-     padding-top:32px;
-     padding-bottom:16px;
      padding-top:2em;
      padding-bottom:1em; 
 }
@@ -25,9 +23,7 @@
     color:$lightColor;
     text-align: center;
     width: 100%;
-    padding-bottom:64px;
     padding-bottom: 4em;
-    margin-bottom:80px;
     margin-bottom: $sectionMargin;
 }
 
@@ -38,8 +34,6 @@
   width:80%;  
   background-color:$lightColor;
   color: $accentColor;
-  padding-top:16px;
-  padding-bottom:32px;
   padding-top: 1em;
   padding-bottom: 2em;
   border-radius: 0.5em;  
@@ -52,8 +46,6 @@
     @include tablet
     {
       width:60%;
-      padding-top:32px;
-      padding-bottom:64px;
       padding-top: 2em;
       padding-bottom: 4em;
     }
@@ -62,7 +54,6 @@
     {
       width: 45%;
       float: right;
-      margin-bottom:6px;
       margin-bottom: 0.4em;
     } 
 }
@@ -90,8 +81,6 @@ input
   width: 100%;
   background-image: linear-gradient(to bottom, darken($lightColor, 10%), $lightColor);
   border-radius: 0.5em;
-  padding-top:4px;
-  padding-bottom:4px;
   padding-top: 0.25em;
   padding-bottom: 0.25em;  
 }
@@ -99,17 +88,12 @@ input
 .form1,.form2,.form3,.form4,.form5
 {   
   letter-spacing: 0.1em;
-  padding-bottom:24px;
   padding-bottom:1.5em;
-  margin-left:32px;
-  margin-left:32px;
   margin-left: 2em;
   margin-right: 2em;
 
     @include tablet
     {
-      margin-left: 48px;
-      margin-right: 48px;
       margin-left: 3em;
       margin-right: 3em;
     }
@@ -119,7 +103,6 @@ textarea
 {
   width:100%;
   background-image: linear-gradient(to bottom, darken($lightColor, 10%), $lightColor);
-  height: 80px;
   height: 5em;
   border-radius: 0.5em;     
 }
@@ -148,8 +131,6 @@ input[type=submit]
    color:$lightColor;
    border: none;
    border-radius: 0.5em; 
-   padding-top: 16px;
-   padding-bottom: 16px;
    padding-top: 1em;
    padding-bottom: 1em;
    cursor:pointer;
