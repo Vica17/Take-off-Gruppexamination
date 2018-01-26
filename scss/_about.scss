@@ -2,11 +2,14 @@
   overflow: hidden;
   max-width: 960px;
   margin: 0 auto;
+  margin-bottom:80px;
   margin-bottom: $sectionMargin;
 }
 .text-content{
   float:none;
+  width:calc(100% - 64px);
   width:calc(100% - 4em);
+  padding: 0 32px;
   padding: 0 2em;
   @include tablet { 
     float: left;

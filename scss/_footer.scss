@@ -1,14 +1,19 @@
 .icon{
+  height:24px;
   height:1.5rem;
   margin-top: 2%;
   text-align:center;
   position: relative;
+  top: 5px;
+  left:-5px;
   top: 0.3125em;
   left:-0.3125em;
 }
 .footer-container{
   background:$accentColor;
   text-align: center;
+  padding-top:20px;
+  padding-bottom:20px;
   padding-top: 1.25em;
   padding-bottom: 1.25em;
   a{
@@ -24,7 +29,8 @@
   padding: 0;
   display: inline-block;
   a{
-    text-decoration: none; 
+    text-decoration: none;
+    padding:10px;
     padding: 0.625em;
     color: $lightColor; 
   }
@@ -38,6 +44,7 @@
 .social-media{
   display: inline-block;
   a{
+    padding-right:16px;
     padding-right: 1em;
 
   }
