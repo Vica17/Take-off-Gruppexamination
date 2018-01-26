@@ -6,6 +6,7 @@ function navToggle() {
         menu.className = "navigation-menu";
     }
 } 
+
 function closeMenu() {
     var menu = document.getElementById("content-toggle");
     if (menu.className === "navigation-menu responsive") {
@@ -14,3 +15,8 @@ function closeMenu() {
         menu.className = "navigation-menu";
     }
 }
+
+//Navigation scroll fix
+var shiftWindow = function() { scrollBy(0, -80) };
+if (location.hash) shiftWindow();
+window.addEventListener("hashchange", shiftWindow);
