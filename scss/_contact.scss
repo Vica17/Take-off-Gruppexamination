@@ -64,7 +64,7 @@
     {
       width:60%;
       padding-top: 2em;
-      padding-bottom: 4em;
+      padding-bottom: 3em;
     }
 
     @include desktop
@@ -98,8 +98,7 @@ input
   width: 100%;
   background-image: linear-gradient(to bottom, darken($lightColor, 10%), $lightColor);
   border-radius: 0.5em;
-  padding-top: 0.5em;
-  padding-bottom: 0.2em;
+  padding: 0.5em;
 }
 
 .form1,.form2,.form3,.form4,.form5
@@ -122,6 +121,7 @@ textarea
   background-image: linear-gradient(to bottom, darken($lightColor, 10%), $lightColor);
   height: 5em;
   border-radius: 0.5em;
+  padding: 0.5em;
 }
 
 ::-webkit-input-placeholder
