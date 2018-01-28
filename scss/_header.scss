@@ -7,7 +7,7 @@
     height: 300px;
     position: relative;
     margin-top: 64px;
-    margin-bottom: $marginBot;
+    margin-bottom: $marginBot / 2;
     display: block;
 
     @include phone-landscape {
@@ -17,6 +17,7 @@
     @include tablet {
         height: 400px;
         margin-top: 80px;
+        margin-bottom: $marginBot;
     }
 
     @include desktop {

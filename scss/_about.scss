@@ -3,7 +3,12 @@
   max-width: 960px;
   margin: 0 auto;
   margin-bottom:80px;
-  margin-bottom: $marginBot;
+  margin-bottom: $marginBot / 2;
+
+  @include tablet {
+    margin-bottom: $marginBot;
+  }
+
 }
 .text-content{
   float:none;

@@ -1,9 +1,13 @@
 .CustomerReviewsContainer {
     max-width: 960px;
     margin: 0 auto;
-    margin-bottom: $marginBot;
+    margin-bottom: $marginBot / 2;
 
     overflow: hidden;
+
+    @include tablet {
+        margin-bottom: $marginBot;
+    }
 }
 .customerReviewsContent {
     @include flex(column, flex-start, flex-start);
@@ -15,7 +19,7 @@
     }
 }
 .reviewContainer {
-    float: left; 
+    float: left;
     max-width: 21%;
 
     padding: 16px;
