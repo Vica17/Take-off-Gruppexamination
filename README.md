@@ -3,6 +3,19 @@ Take off-Gruppexamination
 
 Victoria Nordkvist, Johanna Hörnell, Beratcan Acil och Pernilla Qvist.
 
-Beskriva arbetsmetod
+Skapa en websida till vår fiktiva webbyrå Takeoff enligt mockup från tidigare bildbehandlingskurs.
+ Huvudsakliga krav för uppgiften är:
+* Responsive design - Mobile First. 
+* Användning av SASS som preprocessor, samt SASS funktionalitet (nesting, variabler, mixins samt partials).
+* Semantisk HTML.
+* Huvudsaklig användning av flexbox.
+* Tillgänglighetsanpassad (alt-attribut, labels, färgkontrast etc.).
+* Konsekvent beteende och design: Safari, Chrome, Firefox, Opera, Microsoft Edge samt Internet Explorer 11/10/9/8.
+* Välfungerande på både Android (Android Browser, Chrome for Android) samt iOS (Safari iOS, iOS Chrome).
+* Validering igenom WAVE utan error eller varningar.
 
-Ni ska använda en agil arbetsmetod när ni arbetar med uppgiften. Hur ni arbetar med uppgiften ska i förväg vara bestämt och uppskrivet i projektets README. Vilket sätt ni ska arbeta är upp till er men ni ska ha en backlog uppsatt i Trello eller liknande verktyg som ni sedan antingen delar upp i sprintar eller jobbar utifrån en Kanban-liknande metod. Att ni sedan följer er arbetsmetod är en del av uppgiften, ni får inte frångå arbetsmetoden. Detta verifieras genom att ni en gång i veckan ska ha en avstämning med läraren då samtliga medlemmar ska vara på plats och berätta hur arbetet fortlöper.
+Vår grupp började med att starta upp en backlog i Trello. Vi valde Trello för att dela in, tydliggöra och strukturera upp vårt arbete. Genom Trello är det lätt att följa arbetets gång och se direkt feedback.
+
+Vi delade upp projektet mellan oss där vi på egen hand jobbade med varsin del. Under projektet hade vi daglig diskussion via Slack samt möten ca två dagar per vecka för att stämma av vad vi har jobbat med, eventuella  lösningar på uppkomna problem samt vad vi ska göra näst. Till viss del har vi använt oss av sprint-liknande arbetsmetoder. Då vi satt upp delmål som vi sedan stämt av vid varje träff för att sedan gå vidare till nästa steg.
+
+Vi startade upp ett gemensamt github-repository för att tillsammans bygga vårat projekt. Samtliga medlemmar i gruppen skapade en egen branch för att kunna ladda upp sin kod samt ladda ner ändringar som någon annan i gruppen har gjort. Genom att alla i gruppen har sin egen branch undviks till stor del merge konflikter vilket bidrar till ett smidigt arbetsflöde.
