@@ -14,6 +14,7 @@ Skapa en websida till vår fiktiva webbyrå Takeoff enligt mockup från tidigare
 * Välfungerande på både Android (Android Browser, Chrome for Android) samt iOS (Safari iOS, iOS Chrome).
 * Validering igenom WAVE utan error eller varningar.
 
+## Arbetsmetod 
 Vår grupp började med att starta upp en backlog i Trello. Vi valde Trello för att dela in, tydliggöra och strukturera upp vårt arbete. Genom Trello är det lätt att följa arbetets gång och se direkt feedback.
 
 Vi delade upp projektet mellan oss där vi på egen hand jobbade med varsin del. Under projektet hade vi daglig diskussion via Slack samt möten ca två dagar per vecka för att stämma av vad vi har jobbat med, eventuella  lösningar på uppkomna problem samt vad vi ska göra näst. Till viss del har vi använt oss av sprint-liknande arbetsmetoder. Då vi satt upp delmål som vi sedan stämt av vid varje träff för att sedan gå vidare till nästa steg.
