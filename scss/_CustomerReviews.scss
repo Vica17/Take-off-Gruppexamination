@@ -2,6 +2,8 @@
     max-width: 960px;
     margin: 0 auto;
     margin-bottom: $marginBot;
+
+    overflow: hidden;
 }
 .customerReviewsContent {
     @include flex(column, flex-start, flex-start);
