@@ -1,7 +1,6 @@
 # Take-off-Gruppexamination
-Take off-Gruppexamination
 
-Victoria Nordkvist, Johanna Hörnell, Beratcan Acil och Pernilla Qvist.
+**Victoria Nordkvist, Johanna Hörnell, Beratcan Acil och Pernilla Qvist.**
 
 Skapa en websida till vår fiktiva webbyrå Takeoff enligt mockup från tidigare bildbehandlingskurs.
  Huvudsakliga krav för uppgiften är:
