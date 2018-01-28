@@ -1,9 +1,17 @@
 .work {
     background-color: lighten($darkColor, 80%);
     padding-top: 1em;
-    margin-bottom: $marginBot;
+    margin-bottom: $marginBot / 2;
     text-align: center;
     width: 100%;
+
+    @include tablet {
+        margin-bottom: $marginBot;
+    }
+
+    p {
+       margin: 1em;
+    }
 }
 .work-content {
     width: 100%;
