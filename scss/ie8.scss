@@ -1,4 +1,48 @@
 @import 'variables';
+
+/* Navigation */
+.navigation-content ul {
+		display: block;
+		margin: 0;
+}
+.navigation-content li {
+		display: inline-block;
+		border: none;
+}
+.mobile-menu {
+		display: none;
+}
+
+/* Header */
+.header {
+		height: 600px;
+		background-color: lighten($darkColor, 80%);
+		background: url(../images/header.jpg);
+}
+.header-content {
+		position: relative;
+		top: 0;
+		left: 0;
+		padding-top: 150px;
+
+		img {
+			width: 500px;
+		}
+
+		p {
+			width: 350px;
+		}
+}
+.button {
+		display: block;
+		background-color: $accentColor;
+}
+
+/* Content */
 .social-media{
-	width:100%;
+		width:100%;
+}
+
+.work-content div {
+		width: 13%;
 }
