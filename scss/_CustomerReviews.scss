@@ -4,7 +4,7 @@
     @include margin;
     max-width: 960px;
     margin: 0 auto;
-    margin-bottom: $sectionMargin;
+    margin-bottom: $marginBot;
     @include tablet {
         @include flex(row, center, flex-start);
     }
@@ -45,7 +45,7 @@
 
 .textCenter {
     @include flex($direction: column, $justify: center, $align: center);
-}    
+}
 
 //Makes 2 item closer
 .noneMarginBottom {

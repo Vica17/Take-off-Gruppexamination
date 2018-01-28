@@ -22,7 +22,7 @@
 
     max-width: 960px;
     margin: 0 auto;
-    margin-bottom: $sectionMargin;
+    margin-bottom: $marginBot;
 
     flex-wrap: wrap;
     flex-direction: row;
@@ -37,7 +37,7 @@
     @include desktop{
         width: 25%;
     }
-    
+
 }
 
 .moreInfo {
