@@ -13,6 +13,9 @@
     }
 }
 .reviewContainer {
+    float: left; 
+    max-width: 21%;
+
     padding: 16px;
     padding: 1rem;
     @include tablet {
@@ -47,6 +50,7 @@
 }
 
 .textCenter {
+    text-align: center;
     @include flex($direction: column, $justify: center, $align: center);
 }
 
