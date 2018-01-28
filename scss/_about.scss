@@ -3,7 +3,7 @@
   max-width: 960px;
   margin: 0 auto;
   margin-bottom:80px;
-  margin-bottom: $sectionMargin;
+  margin-bottom: $marginBot;
 }
 .text-content{
   float:none;
@@ -11,7 +11,7 @@
   width:calc(100% - 4em);
   padding: 0 32px;
   padding: 0 2em;
-  @include tablet { 
+  @include tablet {
     float: left;
     width:calc(50% - 4em);
   }
@@ -25,19 +25,19 @@
   height:auto;
   display: none;
   @include tablet {
-    display: block; 
+    display: block;
   }
   @include desktop {
     display: none;
-  } 
+  }
 }
 
 @supports(display:flex){
-  .wrap { 
+  .wrap {
     @include flex(row,center,center);
     flex-wrap: wrap;
     @include tablet {
-      flex-wrap: nowrap; 
+      flex-wrap: nowrap;
     }
   }
   .text-content{
@@ -50,7 +50,7 @@
   div.text-content {
     order: 2;
     @include tablet {
-      order: 0; 
+      order: 0;
     }
     @include desktop {
       order: 0;
@@ -59,7 +59,7 @@
   article.text-content {
     order: 1;
     @include tablet {
-      order: 0; 
+      order: 0;
     }
     @include desktop {
       order: 0;
