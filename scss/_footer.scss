@@ -61,7 +61,7 @@
 
 @supports(display:flex){
   .footer-container{
-    @include flex(column,space-around,center);
+    @include flex(column,space-between,center);
     @include desktop {
       flex-direction: row;
     }
