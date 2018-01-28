@@ -78,7 +78,7 @@
     }
 }
 .button {
-    background-image: linear-gradient(to bottom, lighten($accentColor, 10%), $accentColor);
+    background: $accentColor;
     color: white;
     text-decoration: none;
     padding: 10px 30px;
@@ -88,7 +88,7 @@
     display: none;
 
     &:hover {
-        background-image: linear-gradient(to bottom, lighten($accentColor, 15%), $accentColor);
+        background: lighten($accentColor, 15%);
     }
 
     @include tablet {
@@ -111,4 +111,14 @@
         transform: translate(0, 0);
     }
 
+}
+
+@supports (background: linear-gradient(to bottom, lighten($accentColor, 10%), $accentColor)) {
+    .button {
+        background: linear-gradient(to bottom, lighten($accentColor, 10%), $accentColor);
+
+        &:hover {
+            background: linear-gradient(to bottom, lighten($accentColor, 15%), $accentColor);
+        }
+    }
 }
