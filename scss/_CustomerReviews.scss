@@ -1,10 +1,13 @@
 .CustomerReviewsContainer {
+    max-width: 960px;
+    margin: 0 auto;
+    margin-bottom: $marginBot;
+}
+.customerReviewsContent {
     @include flex(column, flex-start, flex-start);
     flex-wrap: wrap;
     @include margin;
-    max-width: 960px;
-    margin: 0 auto;
-    margin-bottom: $sectionMargin;
+
     @include tablet {
         @include flex(row, center, flex-start);
     }
@@ -45,7 +48,7 @@
 
 .textCenter {
     @include flex($direction: column, $justify: center, $align: center);
-}    
+}
 
 //Makes 2 item closer
 .noneMarginBottom {
