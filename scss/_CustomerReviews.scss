@@ -19,8 +19,10 @@
     }
 }
 .reviewContainer {
-    float: left;
-    max-width: 21%;
+    float: left; 
+    @include desktop {
+        max-width: 21%;
+    }
 
     padding: 16px;
     padding: 1rem;
