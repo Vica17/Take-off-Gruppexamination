@@ -14,6 +14,12 @@
 {
      text-align:center;
      color:$lightColor;
+     padding-top:2em;
+     padding-bottom:1em; 
+}
+
+.contact-wrapper
+{   
      background-color:lighten($darkColor,5%);
      padding-top:1em;
      padding-bottom:1em;
@@ -57,12 +63,13 @@
     h3
     {
       color: $darkColor;
+    }
 
          @include desktop
          {
             padding-bottom:0em;
          }
-     }
+     
 
     @include tablet
     {
@@ -75,8 +82,8 @@
     {
       width: 45%;
       float: right;
-      margin-bottom:0.4em;
-    }
+      margin-bottom: 0.4em;
+    } 
 }
 
 .contactimg
@@ -102,6 +109,8 @@ input
   width: 100%;
   background-image: linear-gradient(to bottom, darken($lightColor, 10%), $lightColor);
   border-radius: 0.5em;
+  padding-top: 0.25em;
+  padding-bottom: 0.25em;  
   padding: 0.5em;
 }
 
@@ -161,11 +170,6 @@ input[type=submit]
       background-image: linear-gradient(to bottom, lighten($accentColor, 15%), $accentColor);
       }
 
-      @include desktop
-      {
-        padding-top:0.75em;
-        padding-bottom:0.75em;
-      }
 }
 
 @supports (display:flex)
@@ -206,7 +210,8 @@ input[type=submit]
 
    input[type=submit]
    {
-      width: 75%;
+      width: 75%; 
+    
 
        @include desktop
        {
@@ -215,3 +220,4 @@ input[type=submit]
        }
     }
 }
+
