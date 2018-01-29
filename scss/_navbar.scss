@@ -73,6 +73,11 @@
     top: 20px;
     right: 20px;
 
+    button {
+      background: none;
+      border: none;
+    }
+
     @include tablet {
         display: none;
     }
