@@ -19,34 +19,19 @@
 }
 
 .contact-wrapper
-{   
-     background-color:lighten($darkColor,5%);
-     padding-top:1em;
-     padding-bottom:1em;
-
-       @include desktop
-       {
-       padding-top:2em;
-       }
-}
-
-.contact-wrapper
 {
     display: inline-block;
+    background-color:$darkColor;
     color:$lightColor;
     text-align: center;
     width: 100%;
     padding-bottom: 4em;
     margin-bottom: $marginBot / 2;
 
-    @include tablet {
+    @include tablet 
+    {
         margin-bottom: $marginBot;
     }
-
-    @include desktop
-      {
-        padding-top:2em;
-      }
 }
 
 .contact-content
@@ -64,26 +49,20 @@
     {
       color: $darkColor;
     }
-
-         @include desktop
-         {
-            padding-bottom:0em;
-         }
      
+        @include tablet
+        {
+          width:60%;
+          padding-top: 2em;
+          padding-bottom: 3em;
+        }
 
-    @include tablet
-    {
-      width:60%;
-      padding-top: 2em;
-      padding-bottom: 3em;
-    }
-
-    @include desktop
-    {
-      width: 45%;
-      float: right;
-      margin-bottom: 0.4em;
-    } 
+        @include desktop
+        {
+          width: 45%;
+          float: right;
+          margin-bottom: 0.4em;
+        } 
 }
 
 .contactimg
@@ -107,10 +86,8 @@
 input
 {
   width: 100%;
-  background-image: linear-gradient(to bottom, darken($lightColor, 10%), $lightColor);
+  background-color: $lightColor;
   border-radius: 0.5em;
-  padding-top: 0.25em;
-  padding-bottom: 0.25em;  
   padding: 0.5em;
 }
 
@@ -131,7 +108,7 @@ input
 textarea
 {
   width:100%;
-  background-image: linear-gradient(to bottom, darken($lightColor, 10%), $lightColor);
+  background-color:$lightColor;
   height: 5em;
   border-radius: 0.5em;
   padding: 0.5em;
@@ -157,19 +134,13 @@ textarea
 input[type=submit]
 {
    width: 80%;
-   background-image: linear-gradient(to bottom, lighten($accentColor, 10%), $accentColor);
+   background-color:$accentColor;
    color:$lightColor;
    border: none;
    border-radius: 0.5em;
    padding-top: 1em;
    padding-bottom: 1em;
    cursor:pointer;
-
-      &:hover
-      {
-      background-image: linear-gradient(to bottom, lighten($accentColor, 15%), $accentColor);
-      }
-
 }
 
 @supports (display:flex)
@@ -212,7 +183,6 @@ input[type=submit]
    {
       width: 75%; 
     
-
        @include desktop
        {
          padding-top:0.75em;
@@ -221,3 +191,30 @@ input[type=submit]
     }
 }
 
+@supports (background: linear-gradient(to bottom, lighten($accentColor, 10%), $accentColor)) 
+{
+   .contact-wrapper
+   {
+   background-color:lighten($darkColor,5%);
+   }
+
+   input
+   {
+   background-image: linear-gradient(to bottom, darken($lightColor, 10%), $lightColor);
+   }
+
+   textarea
+   {
+   background-image: linear-gradient(to bottom, darken($lightColor, 10%), $lightColor);
+   }
+
+   input[type=submit]
+   {
+       background: linear-gradient(to bottom, lighten($accentColor, 10%), $accentColor);
+
+       &:hover 
+       {
+           background: linear-gradient(to bottom, lighten($accentColor, 15%), $accentColor);
+       }
+   }
+}
