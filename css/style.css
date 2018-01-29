@@ -224,6 +224,10 @@
   }
 }
 
+.header-content h1 {
+  display: none;
+}
+
 .header-content img {
   width: 250px;
 }
