@@ -38,11 +38,14 @@
 }
 
 /* Content */
-.text-content{
+.text-content {
     float: left;
     width:43%;
 }
-.social-media{
+.footer-list li {
+	display:inline-block;
+}
+.social-media {
 		width:100%;
 }
 
@@ -68,3 +71,14 @@
 .reviewContainer {
 	width: 21%;
 }
+.devContainer {
+	width: 25%;
+	text-align: center;
+ }
+ .moreInfo {
+	display: block;
+ }
+ .ourTeamImg {
+	 height: 200px;
+	 width: 200px;
+ }
