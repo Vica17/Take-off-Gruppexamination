@@ -1,7 +1,7 @@
 .contact
 {
   display:block;
-  background-color:lighten($darkColor,5%);
+  background-color:$darkColor;
 }
 
 .contact-width
@@ -193,6 +193,10 @@ input[type=submit]
 
 @supports (background: linear-gradient(to bottom, lighten($accentColor, 10%), $accentColor)) 
 {
+   .contact
+   {
+   background-color:lighten($darkColor,5%);
+   }
    .contact-wrapper
    {
    background-color:lighten($darkColor,5%);
