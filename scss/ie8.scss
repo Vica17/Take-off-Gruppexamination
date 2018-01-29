@@ -17,7 +17,6 @@
 .header {
 		height: 600px;
 		background-color: lighten($darkColor, 80%);
-		background: url(../images/header.jpg);
 }
 .header-content {
 		position: relative;
@@ -39,6 +38,10 @@
 }
 
 /* Content */
+.text-content{
+    float: left;
+    width:43%;
+}
 .social-media{
 		width:100%;
 }
@@ -61,4 +64,7 @@
       width:45%;
       height:auto;
       float: left;
+}
+.reviewContainer {
+	width: 21%;
 }
