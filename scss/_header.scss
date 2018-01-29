@@ -6,8 +6,9 @@
         no-repeat;
     height: 300px;
     position: relative;
-    margin-top: 80px;
-    margin-bottom: $sectionMargin;
+    margin-top: 64px;
+    margin-bottom: $marginBot / 2;
+    display: block;
 
     @include phone-landscape {
         height: 350px;
@@ -15,6 +16,8 @@
 
     @include tablet {
         height: 400px;
+        margin-top: 80px;
+        margin-bottom: $marginBot;
     }
 
     @include desktop {
@@ -76,7 +79,7 @@
     }
 }
 .button {
-    background-image: linear-gradient(to bottom, lighten($accentColor, 10%), $accentColor);
+    background: $accentColor;
     color: white;
     text-decoration: none;
     padding: 10px 30px;
@@ -86,7 +89,7 @@
     display: none;
 
     &:hover {
-        background-image: linear-gradient(to bottom, lighten($accentColor, 15%), $accentColor);
+        background: lighten($accentColor, 15%);
     }
 
     @include tablet {
@@ -109,4 +112,14 @@
         transform: translate(0, 0);
     }
 
+}
+
+@supports (background: linear-gradient(to bottom, lighten($accentColor, 10%), $accentColor)) {
+    .button {
+        background: linear-gradient(to bottom, lighten($accentColor, 10%), $accentColor);
+
+        &:hover {
+            background: linear-gradient(to bottom, lighten($accentColor, 15%), $accentColor);
+        }
+    }
 }
