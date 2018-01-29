@@ -3,6 +3,10 @@
     margin: 0 auto;
     margin-bottom: $marginBot / 2;
     overflow: hidden;
+    h2 {
+        text-align: center;
+        @include flex($direction: column, $justify: center, $align: center);
+    }
     @include tablet {
         margin-bottom: $marginBot;
     }
@@ -48,10 +52,6 @@
  }
 .italic {
     font-style: italic;
-}
-.textCenter {
-    text-align: center;
-    @include flex($direction: column, $justify: center, $align: center);
 }
 //Makes 2 item closer
 .noneMarginBottom {
