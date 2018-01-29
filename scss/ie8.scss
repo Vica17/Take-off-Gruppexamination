@@ -17,7 +17,6 @@
 .header {
 		height: 600px;
 		background-color: lighten($darkColor, 80%);
-		background: url(../images/header.jpg);
 }
 .header-content {
 		position: relative;
@@ -49,4 +48,7 @@
 
 .work-content div {
 		width: 13%;
+}
+.reviewContainer {
+	width: 21%;
 }
