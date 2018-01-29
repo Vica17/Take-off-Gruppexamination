@@ -1,0 +1,12 @@
+{
+	"version": 3,
+	"file": "../scss/ie8.css",
+	"sources": [
+		"../scss/ie8.scss"
+	],
+	"sourcesContent": [
+		""
+	],
+	"mappings": "",
+	"names": []
+}

@@ -1,0 +1,72 @@
+/* Navigation */
+.navigation-content ul {
+  display: block;
+  margin: 0; }
+
+.navigation-content li {
+  display: inline-block;
+  border: none; }
+
+.mobile-menu {
+  display: none; }
+
+/* Header */
+.header {
+  height: 600px;
+  background-color: #ededed; }
+
+.header-content {
+  position: relative;
+  top: 0;
+  left: 0;
+  padding-top: 150px; }
+  .header-content img {
+    width: 500px; }
+  .header-content p {
+    width: 350px; }
+
+.button {
+  display: block;
+  background-color: #367e9b; }
+
+/* Content */
+.text-content {
+  float: left;
+  width: 43%; }
+
+.work-content div {
+  width: 13%; }
+
+/*Contact*/
+.contact-content {
+  width: 45%;
+  float: right;
+  padding-bottom: 3.5em;
+  margin-bottom: 0.4em; }
+
+.contactimg {
+  display: inline-block;
+  width: 45%;
+  height: auto;
+  float: left; }
+
+.reviewContainer {
+  width: 21%; }
+
+.devContainer {
+  width: 25%;
+  text-align: center; }
+
+.moreInfo {
+  display: block; }
+
+.ourTeamImg {
+  height: 200px;
+  width: 200px; }
+
+/*Footer*/
+.footer-list li {
+  display: inline-block; }
+
+.social-media {
+  width: 100%; }
