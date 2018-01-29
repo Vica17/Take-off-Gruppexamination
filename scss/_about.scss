@@ -4,11 +4,9 @@
   margin: 0 auto;
   margin-bottom:80px;
   margin-bottom: $marginBot / 2;
-
   @include tablet {
     margin-bottom: $marginBot;
   }
-
 }
 .text-content{
   float:none;
@@ -20,10 +18,10 @@
     float: left;
     width:calc(50% - 4em);
   }
-}
-.text-content img{
-  width: 100%;
-  height: auto;
+  img{
+    width: 100%;
+    height: auto;
+  }
 }
 .tablet-image{
   width:100%;
@@ -36,7 +34,6 @@
     display: none;
   }
 }
-
 @supports(display:flex){
   .wrap {
     @include flex(row,center,center);
