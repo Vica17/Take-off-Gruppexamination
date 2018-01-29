@@ -27,7 +27,6 @@
     li {
         padding: 20px;
         border-bottom: 1px solid lighten($darkColor, 80%);
-        /*Border eller inte? */
 
         @include tablet {
             display: inline-block;
